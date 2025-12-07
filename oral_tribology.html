@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Oral Tribology &#8212; Food Oral Processing &amp; AI</title>
+    <title>Oral Tribology &#8212; Food Oral Processing, Sensory Perception &amp; AI</title>
   
   
   
@@ -67,7 +67,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'oral_tribology';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="Predictive Modeling of Food" href="predictive_modeling.html" />
+    <link rel="prev" title="Predictive Modeling of Food Sensory Attributes" href="predictive_modeling.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -159,8 +159,8 @@ const thebe_selector_output = ".output, .cell_output"
       
     
     
-    <img src="_static/toi_logo.jpg" class="logo__image only-light" alt="Food Oral Processing & AI - Home"/>
-    <script>document.write(`<img src="_static/toi_logo.jpg" class="logo__image only-dark" alt="Food Oral Processing & AI - Home"/>`);</script>
+    <img src="_static/toi_logo.jpg" class="logo__image only-light" alt="Food Oral Processing, Sensory Perception & AI - Home"/>
+    <script>document.write(`<img src="_static/toi_logo.jpg" class="logo__image only-dark" alt="Food Oral Processing, Sensory Perception & AI - Home"/>`);</script>
   
   
 </a></div>
@@ -384,6 +384,7 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-stribeck-framework">The Stribeck Framework</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#novel-biomimetic-oral-tribometer">Novel Biomimetic Oral Tribometer</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#typical-workflow">Typical Workflow</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#representative-equation">Representative Equation</a></li>
@@ -403,29 +404,61 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="oral-tribology">
 <h1>Oral Tribology<a class="headerlink" href="#oral-tribology" title="Permalink to this heading">#</a></h1>
-<p>Oral tribology studies the friction, lubrication, and textural perception of foods during oral processing. Quantifying the interaction between food, saliva, and oral surfaces it provides mechanistic insights into sensory attributes such as smoothness, creaminess, and astringency.</p>
+<p>Oral tribology studies the friction, lubrication, and textural perception of foods during oral processing. Quantifying the interaction between food, saliva, and oral surfaces, it provides mechanistic insights into sensory attributes such as smoothness, creaminess, and astringency.</p>
 <figure class="align-default" id="fig-stribeck">
 <a class="reference internal image-reference" href="_images/sc.png"><img alt="_images/sc.png" src="_images/sc.png" style="width: 500px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 2 </span><span class="caption-text">Stribeck curve showing the three lubrication regimes: boundary, mixed, and elastohydrodynamic (EHD).</span><a class="headerlink" href="#fig-stribeck" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 3 </span><span class="caption-text">Stribeck curve showing the three lubrication regimes: boundary, mixed, and elastohydrodynamic (EHD).</span><a class="headerlink" href="#fig-stribeck" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
+<section id="the-stribeck-framework">
+<h2>The Stribeck Framework<a class="headerlink" href="#the-stribeck-framework" title="Permalink to this heading">#</a></h2>
+<p>The Stribeck curve relates the friction coefficient <span class="math notranslate nohighlight">\(\mu\)</span> to the Hersey number:</p>
+<div class="math notranslate nohighlight">
+\[
+\text{Hersey number} = \frac{\eta \cdot v}{F_n}
+\]</div>
+<p>Three distinct regimes emerge:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Regime</p></th>
+<th class="head"><p>Characteristics</p></th>
+<th class="head"><p>Sensory Correlates</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Boundary</p></td>
+<td><p>Surface asperities in contact</p></td>
+<td><p>Astringency, roughness</p></td>
+</tr>
+<tr class="row-odd"><td><p>Mixed</p></td>
+<td><p>Partial fluid film</p></td>
+<td><p>Creaminess transition</p></td>
+</tr>
+<tr class="row-even"><td><p>Hydrodynamic</p></td>
+<td><p>Full fluid separation</p></td>
+<td><p>Smoothness, slipperiness</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
 <section id="novel-biomimetic-oral-tribometer">
 <h2>Novel Biomimetic Oral Tribometer<a class="headerlink" href="#novel-biomimetic-oral-tribometer" title="Permalink to this heading">#</a></h2>
 <p>This <strong>novel biomimetic oral tribometer</strong> is a custom-designed instrument that mimics tongue-palate interactions under controlled conditions. Key features include:</p>
 <ul class="simple">
-<li><p><strong>Simulated Oral Surfaces:</strong> Flexible, compliant surfaces that replicate tongue and palate elasticity.</p></li>
-<li><p><strong>Controlled Sliding:</strong> Adjustable velocity and normal force to reproduce mastication dynamics.</p></li>
-<li><p><strong>Environmental Control:</strong> Temperature and humidity settings matching oral conditions.</p></li>
-<li><p><strong>Real-time Friction Measurement:</strong> High-resolution sensors capturing friction coefficient <span class="math notranslate nohighlight">\(\mu\)</span> over time.</p></li>
+<li><p><strong>Simulated Oral Surfaces:</strong> Flexible, compliant surfaces that replicate tongue and palate elasticity</p></li>
+<li><p><strong>Controlled Sliding:</strong> Adjustable velocity and normal force to reproduce mastication dynamics</p></li>
+<li><p><strong>Environmental Control:</strong> Temperature and humidity settings matching oral conditions</p></li>
+<li><p><strong>Real-time Friction Measurement:</strong> High-resolution sensors capturing friction coefficient <span class="math notranslate nohighlight">\(\mu\)</span> over time</p></li>
 </ul>
 <section id="typical-workflow">
 <h3>Typical Workflow<a class="headerlink" href="#typical-workflow" title="Permalink to this heading">#</a></h3>
 <ol class="arabic simple">
-<li><p><strong>Sample Preparation:</strong> Food or emulsion is prepared under standard laboratory conditions.</p></li>
-<li><p><strong>Mounting on Tribometer:</strong> Sample placed between compliant upper and lower surfaces.</p></li>
-<li><p><strong>Measurement:</strong> Record friction force while varying sliding velocity, normal force, or lubrication.</p></li>
-<li><p><strong>Data Analysis:</strong> Compute friction coefficient and correlate with sensory perception.</p></li>
+<li><p><strong>Sample Preparation:</strong> Food or emulsion is prepared under standard laboratory conditions</p></li>
+<li><p><strong>Mounting on Tribometer:</strong> Sample placed between compliant upper and lower surfaces</p></li>
+<li><p><strong>Measurement:</strong> Record friction force while varying sliding velocity, normal force, or lubrication</p></li>
+<li><p><strong>Data Analysis:</strong> Compute friction coefficient and correlate with sensory perception</p></li>
 </ol>
 </section>
 <section id="representative-equation">
@@ -433,7 +466,7 @@ document.write(`
 <p>The friction coefficient <span class="math notranslate nohighlight">\(\mu\)</span> measured by the tribometer can be expressed as:</p>
 <div class="math notranslate nohighlight">
 \[
-\mu = \frac{F_\text{friction}}{F_\text{normal}} = f(\eta, v, F_n, \sigma, \text{saliva})
+\mu = \frac{F_{\text{friction}}}{F_{\text{normal}}} = f(\eta, v, F_n, \sigma, \text{saliva})
 \]</div>
 <p>Where:</p>
 <ul class="simple">
@@ -441,17 +474,16 @@ document.write(`
 <li><p><span class="math notranslate nohighlight">\(v\)</span> = sliding velocity</p></li>
 <li><p><span class="math notranslate nohighlight">\(F_n\)</span> = normal force</p></li>
 <li><p><span class="math notranslate nohighlight">\(\sigma\)</span> = surface roughness</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">saliva</span></code> = presence and composition of lubricating fluid</p></li>
+<li><p>saliva = presence and composition of lubricating fluid</p></li>
 </ul>
 </section>
 <section id="applications">
 <h3>Applications<a class="headerlink" href="#applications" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
-<li><p>Quantifying smoothness and creaminess of dairy and plant-based emulsions.</p></li>
-<li><p>Studying the influence of fat, protein, and hydrocolloids on oral perception.</p></li>
-<li><p>Supporting predictive models for sensory outcomes in product development.</p></li>
+<li><p>Quantifying smoothness and creaminess of dairy and plant-based emulsions</p></li>
+<li><p>Studying the influence of fat, protein, and hydrocolloids on oral perception</p></li>
+<li><p>Supporting predictive models for sensory outcomes in product development</p></li>
 </ul>
-<hr class="docutils" />
 <p>This novel biomimetic oral tribometer bridges <strong>physical measurements and sensory science</strong>, enabling quantitative analysis of complex oral texture phenomena.</p>
 </section>
 </section>
@@ -493,7 +525,7 @@ document.write(`
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Predictive Modeling of Food</p>
+        <p class="prev-next-title">Predictive Modeling of Food Sensory Attributes</p>
       </div>
     </a>
 </div>
@@ -512,6 +544,7 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-stribeck-framework">The Stribeck Framework</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#novel-biomimetic-oral-tribometer">Novel Biomimetic Oral Tribometer</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#typical-workflow">Typical Workflow</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#representative-equation">Representative Equation</a></li>

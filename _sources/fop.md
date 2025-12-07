@@ -31,10 +31,6 @@ Oral processing integrates multiple measurable quantities:
 | Yield stress | $\sigma_y$ | Structural breakdown threshold |
 | Adhesion force | $F_a$ | Coating, mouthfeel persistence |
 
-## Tribology in Oral Processing
-
-The Stribeck curve framework describes lubrication regimes in the oral cavity:
-
 ## Why FOP Matters
 
 Understanding oral processing enables:
