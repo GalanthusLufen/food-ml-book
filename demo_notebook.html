@@ -427,6 +427,17 @@ document.write(`
 <span class="c1"># Simulated sensory scores</span>
 <span class="n">thickness_score</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">+</span> <span class="mi">3</span> <span class="o">*</span> <span class="n">viscosity</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="n">n_samples</span><span class="p">)</span>
 <span class="n">smoothness_score</span> <span class="o">=</span> <span class="mi">8</span> <span class="o">-</span> <span class="mi">5</span> <span class="o">*</span> <span class="n">friction</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">,</span> <span class="n">n_samples</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">thickness_score</span><span class="p">[:</span><span class="mi">10</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">smoothness_score</span><span class="p">[:</span><span class="mi">10</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[4.44137962 8.44583859 6.34003705 7.07243794 3.50213992 2.76058999
+ 2.09563034 7.47844024 5.61462417 6.69301394]
+[6.79875504 5.10990284 5.7388775  7.0220137  7.54923802 7.42549853
+ 7.42131973 5.26918844 7.18097903 5.49724534]
 </pre></div>
 </div>
 </div>
@@ -455,6 +466,9 @@ document.write(`
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<img alt="_images/0a97193a6b52dffd53f49f78c7006ae1e0edffcd3ac3316717ea42c860a2683d.png" src="_images/0a97193a6b52dffd53f49f78c7006ae1e0edffcd3ac3316717ea42c860a2683d.png" />
+</div>
 </div>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="we-calculate-the-correlation-coefficient">
@@ -468,6 +482,12 @@ document.write(`
 
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Correlation (Viscosity - Thickness): r = </span><span class="si">{</span><span class="n">r_thickness</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Correlation (Friction - Smoothness): r = </span><span class="si">{</span><span class="n">r_smoothness</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Correlation (Viscosity - Thickness): r = 0.952
+Correlation (Friction - Smoothness): r = -0.965
 </pre></div>
 </div>
 </div>
