@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Food oral processing involves complex interactions between food structure, saliva, and oral tissues. Machine learning offers powerful tools for predicting sensory outcomes from physical measurements.
+Food oral processing involves complex interactions between food structure, saliva, and oral tissues. Artificial inteligence offers powerful tools for predicting sensory outcomes from physical measurements.
 
 ## Key Concepts
 

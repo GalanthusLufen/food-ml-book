@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Demo: Sensory Data Analysis &#8212; Food Oral Processing &amp; ML</title>
+    <title>Demo: Sensory Data Analysis &#8212; Food Oral Processing &amp; AI</title>
   
   
   
@@ -153,7 +153,7 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   
-    <p class="title logo__title">Food Oral Processing & ML</p>
+    <p class="title logo__title">Food Oral Processing & AI</p>
   
 </a></div>
         <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
@@ -162,13 +162,16 @@ const thebe_selector_output = ".output, .cell_output"
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="intro.html">
-                    Food Oral Processing & Machine Learning
+                    Food Oral Processing & Artificial inteligence
                 </a>
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="chapter1.html">Sensory Perception Modeling</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Demo: Sensory Data Analysis</a></li>
+
+
+
 </ul>
 
     </div>
@@ -364,8 +367,15 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Demo: Sensory Data Analysis</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#we-import-liberies-and-data-for-viscosity-and-friction">1. We import liberies and data for viscosity and friction</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#we-plot-out-the-data-on-a-figure-plot">2. We plot out the data on a figure plot</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#we-calculate-the-correlation-coefficient">3. We calculate the correlation coefficient</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#correlation-analysis">Correlation Analysis</a></li>
 </ul>
+</li>
+</ul>
+
             </nav>
         </div>
     </div>
@@ -379,9 +389,12 @@ document.write(`
   <section class="tex2jax_ignore mathjax_ignore" id="demo-sensory-data-analysis">
 <h1>Demo: Sensory Data Analysis<a class="headerlink" href="#demo-sensory-data-analysis" title="Permalink to this heading">#</a></h1>
 <p>This notebook demonstrates a simple workflow for sensory data visualization.</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="we-import-liberies-and-data-for-viscosity-and-friction">
+<h1>1. We import liberies and data for viscosity and friction<a class="headerlink" href="#we-import-liberies-and-data-for-viscosity-and-friction" title="Permalink to this heading">#</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 
 <span class="c1"># Generate synthetic sensory data</span>
@@ -399,9 +412,12 @@ document.write(`
 </div>
 </div>
 </div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="we-plot-out-the-data-on-a-figure-plot">
+<h1>2. We plot out the data on a figure plot<a class="headerlink" href="#we-plot-out-the-data-on-a-figure-plot" title="Permalink to this heading">#</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
 
 <span class="c1"># Plot 1: Viscosity vs Thickness</span>
 <span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">viscosity</span><span class="p">,</span> <span class="n">thickness_score</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.6</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="s1">&#39;steelblue&#39;</span><span class="p">)</span>
@@ -421,11 +437,14 @@ document.write(`
 </div>
 </div>
 </div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="we-calculate-the-correlation-coefficient">
+<h1>3. We calculate the correlation coefficient<a class="headerlink" href="#we-calculate-the-correlation-coefficient" title="Permalink to this heading">#</a></h1>
 <section id="correlation-analysis">
 <h2>Correlation Analysis<a class="headerlink" href="#correlation-analysis" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">r_thickness</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">corrcoef</span><span class="p">(</span><span class="n">viscosity</span><span class="p">,</span> <span class="n">thickness_score</span><span class="p">)[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">r_thickness</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">corrcoef</span><span class="p">(</span><span class="n">viscosity</span><span class="p">,</span> <span class="n">thickness_score</span><span class="p">)[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
 <span class="n">r_smoothness</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">corrcoef</span><span class="p">(</span><span class="n">friction</span><span class="p">,</span> <span class="n">smoothness_score</span><span class="p">)[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Correlation (Viscosity - Thickness): r = </span><span class="si">{</span><span class="n">r_thickness</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
@@ -492,8 +511,15 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Demo: Sensory Data Analysis</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#we-import-liberies-and-data-for-viscosity-and-friction">1. We import liberies and data for viscosity and friction</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#we-plot-out-the-data-on-a-figure-plot">2. We plot out the data on a figure plot</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#we-calculate-the-correlation-coefficient">3. We calculate the correlation coefficient</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#correlation-analysis">Correlation Analysis</a></li>
 </ul>
+</li>
+</ul>
+
   </nav></div>
 
 </div></div>
