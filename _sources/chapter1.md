@@ -1,8 +1,9 @@
-# Sensory Perception Modeling
+# **Undergraduate Course: Food Oral Processing, Sensory Perception Modeling and Artificial Intelligence**
 
 ## Introduction
 
-Food oral processing involves complex interactions between food structure, saliva, and oral tissues. Artificial inteligence offers powerful tools for predicting sensory outcomes from physical measurements.
+Food oral processing involves complex interactions between food structure, saliva, and oral tissues. 
+Artificial intelligence offers powerful tools for predicting sensory outcomes from physical measurements.
 
 ## Key Concepts
 

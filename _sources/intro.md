@@ -1,6 +1,10 @@
 # **Food Oral Processing & Artificial inteligence**
 
-Welcome to this e-book on combining food oral processing research with machine learning approaches.
+<div style="text-align:left;">
+  <img src="toi_logo.jpg" alt="TOI Logo" width="180">
+</div>
+
+Welcome to this e-book on combining food oral processing and sensory science research with artificial intelligence approaches.
 
 ## About This Book ##
 
