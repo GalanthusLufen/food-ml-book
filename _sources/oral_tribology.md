@@ -22,18 +22,11 @@ Tribological measurements provide insight into thin-film related texture attribu
 
 The Stribeck curve describes friction behavior across different lubrication regimes:
 
-```
-Friction Coefficient (μ)
-    │
-    │    Boundary
-    │      ╲
-    │       ╲    Mixed
-    │        ╲   ╱╲
-    │         ╲╱   ╲
-    │              ╲  Hydrodynamic
-    │               ╲___________
-    └────────────────────────────→
-           Sommerfeld Number (ηV/P)
+```{figure} sc.png
+---
+name: striback-curve
+---
+Stribeck curve with three lubrication regimes: boundary, mixed and hydrodynamic.
 ```
 
 **Lubrication Regimes:**

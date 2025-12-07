@@ -2,7 +2,7 @@
 
 This chapter explores the application of deep learning and synthetic data generation to predict sensory perception attributes in food systems. By integrating rheological, tribological, and physiological parameters, neural network models can learn complex relationships between instrumental measurements and human sensory responses.
 
-## Introduction
+## Introduction to predictive modeling
 
 ### The Challenge of Sensory Prediction
 

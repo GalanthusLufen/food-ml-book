@@ -1,3 +1,8 @@
+> # ⚠️ **DEMO VERSION**
+> ## **E-book for Assistant Professor Application – Food Science (Penn State University)**
+> **Author:** Miodrag Glumac, Ph.D.  
+> **Purpose:** Demonstration document for evaluation only.
+
 # Introduction
 
 # **Food Oral Processing, Sensory Perception Modeling and Artificial Intelligence**
