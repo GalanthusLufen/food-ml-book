@@ -23,7 +23,7 @@ Where:
 
 ### Neural Network Approach
 
-TabTransformer and similar architectures can map physical parameters to sensory scores:
+We can use deep neural network architectures that can map physical parameters to sensory scores:
 
 | Input Features | Output |
 |---------------|--------|

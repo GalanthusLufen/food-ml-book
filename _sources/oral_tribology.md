@@ -1,6 +1,6 @@
 # Oral Tribology
 
-Oral tribology studies the friction, lubrication, and textural perception of foods during oral processing. By quantifying the interaction between food, saliva, and oral surfaces, it provides mechanistic insights into sensory attributes such as smoothness, creaminess, and astringency.
+Oral tribology studies the friction, lubrication, and textural perception of foods during oral processing. Quantifying the interaction between food, saliva, and oral surfaces it provides mechanistic insights into sensory attributes such as smoothness, creaminess, and astringency.
 
 ## Novel Biomimetic Oral Tribometer
 
