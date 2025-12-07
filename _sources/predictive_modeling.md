@@ -33,3 +33,27 @@ Predictive modeling in food science leverages data-driven approaches to understa
 ---
 
 By combining predictive modeling with sensory and physical data, food scientists can make informed, efficient decisions and accelerate product innovation.
+
+### Neural Network Approach
+
+We can use deep neural network architectures that can map physical parameters to sensory scores:
+
+| Input Features | Output |
+|---------------|--------|
+| Viscosity | Thickness perception |
+| Particle size | Grittiness |
+| Fat content | Creaminess |
+| Friction coefficient | Smoothness |
+
+## Model Performance Metrics
+
+Based on recent work with texture-modified plant-based smoothies:
+
+- **MSE**: < 0.13
+- **Test R²**: 0.91
+
+These results demonstrate the potential for synthetic data augmentation in sensory science.
+
+## References
+
+1. Glumac, M. et al. (2025). Food Hydrocolloids - Synthetic data and neural networks for sensory prediction.

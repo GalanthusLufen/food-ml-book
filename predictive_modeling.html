@@ -66,7 +66,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Oral Tribology" href="oral_tribology.html" />
-    <link rel="prev" title="2. Demo: Sensory Data Analysis with Python" href="demo_notebook.html" />
+    <link rel="prev" title="2. Demo: Sensory Data Analysis with Python" href="demo.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -175,14 +175,11 @@ const thebe_selector_output = ".output, .cell_output"
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Fundamentals of Food Oral Processing</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="chapter1.html">1. Food Oral Processing &amp; Sensory Science</a></li>
+<li class="toctree-l1"><a class="reference internal" href="fop.html">1. Food Oral Processing &amp; Sensory Science</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Practical Demos with Python</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="demo_notebook.html">2. Demo: Sensory Data Analysis with Python</a></li>
-
-
-
+<li class="toctree-l1"><a class="reference internal" href="demo.html">2. Demo: Sensory Data Analysis with Python</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Predictive Modeling</span></p>
 <ul class="current nav bd-sidenav">
@@ -388,7 +385,12 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-concepts">Key Concepts</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#workflow-example">Workflow Example</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#applications">Applications</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#applications">Applications</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#neural-network-approach">Neural Network Approach</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#model-performance-metrics">Model Performance Metrics</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
 </ul>
             </nav>
         </div>
@@ -444,6 +446,47 @@ document.write(`
 </ul>
 <hr class="docutils" />
 <p>By combining predictive modeling with sensory and physical data, food scientists can make informed, efficient decisions and accelerate product innovation.</p>
+<section id="neural-network-approach">
+<h3>Neural Network Approach<a class="headerlink" href="#neural-network-approach" title="Permalink to this heading">#</a></h3>
+<p>We can use deep neural network architectures that can map physical parameters to sensory scores:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Input Features</p></th>
+<th class="head"><p>Output</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Viscosity</p></td>
+<td><p>Thickness perception</p></td>
+</tr>
+<tr class="row-odd"><td><p>Particle size</p></td>
+<td><p>Grittiness</p></td>
+</tr>
+<tr class="row-even"><td><p>Fat content</p></td>
+<td><p>Creaminess</p></td>
+</tr>
+<tr class="row-odd"><td><p>Friction coefficient</p></td>
+<td><p>Smoothness</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+<section id="model-performance-metrics">
+<h2>Model Performance Metrics<a class="headerlink" href="#model-performance-metrics" title="Permalink to this heading">#</a></h2>
+<p>Based on recent work with texture-modified plant-based smoothies:</p>
+<ul class="simple">
+<li><p><strong>MSE</strong>: &lt; 0.13</p></li>
+<li><p><strong>Test R²</strong>: 0.91</p></li>
+</ul>
+<p>These results demonstrate the potential for synthetic data augmentation in sensory science.</p>
+</section>
+<section id="references">
+<h2>References<a class="headerlink" href="#references" title="Permalink to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Glumac, M. et al. (2025). Food Hydrocolloids - Synthetic data and neural networks for sensory prediction.</p></li>
+</ol>
 </section>
 </section>
 
@@ -478,7 +521,7 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="demo_notebook.html"
+       href="demo.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
@@ -513,7 +556,12 @@ document.write(`
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-concepts">Key Concepts</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#workflow-example">Workflow Example</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#applications">Applications</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#applications">Applications</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#neural-network-approach">Neural Network Approach</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#model-performance-metrics">Model Performance Metrics</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
 </ul>
   </nav></div>
 

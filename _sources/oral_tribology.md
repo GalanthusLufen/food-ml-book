@@ -2,6 +2,13 @@
 
 Oral tribology studies the friction, lubrication, and textural perception of foods during oral processing. Quantifying the interaction between food, saliva, and oral surfaces it provides mechanistic insights into sensory attributes such as smoothness, creaminess, and astringency.
 
+```{figure} sc.png
+:width: 500px
+:name: fig-stribeck
+
+Stribeck curve showing the three lubrication regimes: boundary, mixed, and elastohydrodynamic (EHD).
+```
+
 ## Novel Biomimetic Oral Tribometer
 
 This **novel biomimetic oral tribometer** is a custom-designed instrument that mimics tongue-palate interactions under controlled conditions. Key features include:

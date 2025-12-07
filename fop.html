@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>2. Demo: Sensory Data Analysis with Python &#8212; Food Oral Processing &amp; AI</title>
+    <title>Food Oral Processing &#8212; Food Oral Processing &amp; AI</title>
   
   
   
@@ -62,11 +62,13 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'demo_notebook';</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'fop';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Predictive Modeling of Food" href="predictive_modeling.html" />
-    <link rel="prev" title="Undergraduate Course: Food Oral Processing, Sensory Perception Modeling and Artificial Intelligence" href="chapter1.html" />
+    <link rel="next" title="2. Demo: Sensory Data Analysis with Python" href="demo.html" />
+    <link rel="prev" title="Introduction" href="intro.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -174,15 +176,12 @@ const thebe_selector_output = ".output, .cell_output"
             </li>
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Fundamentals of Food Oral Processing</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="chapter1.html">1. Food Oral Processing &amp; Sensory Science</a></li>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">1. Food Oral Processing &amp; Sensory Science</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Practical Demos with Python</span></p>
-<ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">2. Demo: Sensory Data Analysis with Python</a></li>
-
-
-
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="demo.html">2. Demo: Sensory Data Analysis with Python</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Predictive Modeling</span></p>
 <ul class="nav bd-sidenav">
@@ -262,7 +261,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/GalanthusLufen/food-ml-book/issues/new?title=Issue%20on%20page%20%2Fdemo_notebook.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/GalanthusLufen/food-ml-book/issues/new?title=Issue%20on%20page%20%2Ffop.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -292,7 +291,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="_sources/demo_notebook.ipynb" target="_blank"
+      <li><a href="_sources/fop.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -302,7 +301,7 @@ const thebe_selector_output = ".output, .cell_output"
 <span class="btn__icon-container">
   <i class="fas fa-file"></i>
   </span>
-<span class="btn__text-container">.ipynb</span>
+<span class="btn__text-container">.md</span>
 </a>
 </li>
       
@@ -376,7 +375,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>2. Demo: Sensory Data Analysis with Python</h1>
+    <h1>Food Oral Processing</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -386,15 +385,12 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">2. Demo: Sensory Data Analysis with Python</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#we-import-liberies-and-data-for-viscosity-and-friction">1. We import liberies and data for viscosity and friction</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#we-plot-out-the-data-on-a-figure-plot">2. We plot out the data on a figure plot</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#we-calculate-the-correlation-coefficient">3. We calculate the correlation coefficient</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#correlation-analysis">Correlation Analysis</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-oral-processing-chain">The Oral Processing Chain</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-physical-parameters">Key Physical Parameters</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tribology-in-oral-processing">Tribology in Oral Processing</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#why-fop-matters">Why FOP Matters</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
 </ul>
-</li>
-</ul>
-
             </nav>
         </div>
     </div>
@@ -405,93 +401,78 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="demo-sensory-data-analysis-with-python">
-<h1>2. Demo: Sensory Data Analysis with Python<a class="headerlink" href="#demo-sensory-data-analysis-with-python" title="Permalink to this heading">#</a></h1>
-<p>This notebook demonstrates a simple workflow for sensory data visualization.</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="food-oral-processing">
+<h1>Food Oral Processing<a class="headerlink" href="#food-oral-processing" title="Permalink to this heading">#</a></h1>
+<p>Food oral processing (FOP) describes the dynamic sequence of mechanical and biochemical transformations that occur when food enters the mouth until swallowing. It bridges food physics, sensory science, and physiology.</p>
+<figure class="align-default" id="fop-overview">
+<img alt="_images/fop.png" src="_images/fop.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 1 </span><span class="caption-text">Schematic overview of food oral processing.</span><a class="headerlink" href="#fop-overview" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<section id="the-oral-processing-chain">
+<h2>The Oral Processing Chain<a class="headerlink" href="#the-oral-processing-chain" title="Permalink to this heading">#</a></h2>
+<p>The transformation of food in the oral cavity follows a structured sequence:</p>
+<div class="math notranslate nohighlight">
+\[
+\text{Food Structure} \xrightarrow{\text{mastication}} \text{Bolus Formation} \xrightarrow{\text{lubrication}} \text{Swallowing}
+\]</div>
+<p>Each stage involves distinct physical phenomena—particle breakdown, saliva incorporation, and tribological interactions between the bolus and oral surfaces.</p>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="we-import-liberies-and-data-for-viscosity-and-friction">
-<h1>1. We import liberies and data for viscosity and friction<a class="headerlink" href="#we-import-liberies-and-data-for-viscosity-and-friction" title="Permalink to this heading">#</a></h1>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
-
-<span class="c1"># Generate synthetic sensory data</span>
-<span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">42</span><span class="p">)</span>
-<span class="n">n_samples</span> <span class="o">=</span> <span class="mi">100</span>
-
-<span class="c1"># Physical measurements</span>
-<span class="n">viscosity</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="mf">0.1</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">,</span> <span class="n">n_samples</span><span class="p">)</span>
-<span class="n">friction</span> <span class="o">=</span> <span class="mf">0.3</span> <span class="o">*</span> <span class="n">viscosity</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="n">n_samples</span><span class="p">)</span>
-
-<span class="c1"># Simulated sensory scores</span>
-<span class="n">thickness_score</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">+</span> <span class="mi">3</span> <span class="o">*</span> <span class="n">viscosity</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="n">n_samples</span><span class="p">)</span>
-<span class="n">smoothness_score</span> <span class="o">=</span> <span class="mi">8</span> <span class="o">-</span> <span class="mi">5</span> <span class="o">*</span> <span class="n">friction</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">,</span> <span class="n">n_samples</span><span class="p">)</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">thickness_score</span><span class="p">[:</span><span class="mi">10</span><span class="p">])</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">smoothness_score</span><span class="p">[:</span><span class="mi">10</span><span class="p">])</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[4.44137962 8.44583859 6.34003705 7.07243794 3.50213992 2.76058999
- 2.09563034 7.47844024 5.61462417 6.69301394]
-[6.79875504 5.10990284 5.7388775  7.0220137  7.54923802 7.42549853
- 7.42131973 5.26918844 7.18097903 5.49724534]
-</pre></div>
-</div>
-</div>
-</div>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="we-plot-out-the-data-on-a-figure-plot">
-<h1>2. We plot out the data on a figure plot<a class="headerlink" href="#we-plot-out-the-data-on-a-figure-plot" title="Permalink to this heading">#</a></h1>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
-
-<span class="c1"># Plot 1: Viscosity vs Thickness</span>
-<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">viscosity</span><span class="p">,</span> <span class="n">thickness_score</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.6</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="s1">&#39;steelblue&#39;</span><span class="p">)</span>
-<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Viscosity (Pa·s)&#39;</span><span class="p">)</span>
-<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Thickness Score&#39;</span><span class="p">)</span>
-<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Viscosity → Thickness Perception&#39;</span><span class="p">)</span>
-
-<span class="c1"># Plot 2: Friction vs Smoothness</span>
-<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">friction</span><span class="p">,</span> <span class="n">smoothness_score</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.6</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="s1">&#39;coral&#39;</span><span class="p">)</span>
-<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Friction Coefficient&#39;</span><span class="p">)</span>
-<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Smoothness Score&#39;</span><span class="p">)</span>
-<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Friction → Smoothness Perception&#39;</span><span class="p">)</span>
-
-<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<img alt="_images/0a97193a6b52dffd53f49f78c7006ae1e0edffcd3ac3316717ea42c860a2683d.png" src="_images/0a97193a6b52dffd53f49f78c7006ae1e0edffcd3ac3316717ea42c860a2683d.png" />
-</div>
+<section id="key-physical-parameters">
+<h2>Key Physical Parameters<a class="headerlink" href="#key-physical-parameters" title="Permalink to this heading">#</a></h2>
+<p>Oral processing integrates multiple measurable quantities:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Parameter</p></th>
+<th class="head"><p>Symbol</p></th>
+<th class="head"><p>Relevance</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Viscosity</p></td>
+<td><p><span class="math notranslate nohighlight">\(\eta\)</span></p></td>
+<td><p>Flow behavior during manipulation</p></td>
+</tr>
+<tr class="row-odd"><td><p>Friction coefficient</p></td>
+<td><p><span class="math notranslate nohighlight">\(\mu\)</span></p></td>
+<td><p>Surface interactions (tongue-palate)</p></td>
+</tr>
+<tr class="row-even"><td><p>Particle size distribution</p></td>
+<td><p><span class="math notranslate nohighlight">\(d_{50}\)</span></p></td>
+<td><p>Grittiness, smoothness perception</p></td>
+</tr>
+<tr class="row-odd"><td><p>Yield stress</p></td>
+<td><p><span class="math notranslate nohighlight">\(\sigma_y\)</span></p></td>
+<td><p>Structural breakdown threshold</p></td>
+</tr>
+<tr class="row-even"><td><p>Adhesion force</p></td>
+<td><p><span class="math notranslate nohighlight">\(F_a\)</span></p></td>
+<td><p>Coating, mouthfeel persistence</p></td>
+</tr>
+</tbody>
+</table>
 </div>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="we-calculate-the-correlation-coefficient">
-<h1>3. We calculate the correlation coefficient<a class="headerlink" href="#we-calculate-the-correlation-coefficient" title="Permalink to this heading">#</a></h1>
-<section id="correlation-analysis">
-<h2>Correlation Analysis<a class="headerlink" href="#correlation-analysis" title="Permalink to this heading">#</a></h2>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">r_thickness</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">corrcoef</span><span class="p">(</span><span class="n">viscosity</span><span class="p">,</span> <span class="n">thickness_score</span><span class="p">)[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
-<span class="n">r_smoothness</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">corrcoef</span><span class="p">(</span><span class="n">friction</span><span class="p">,</span> <span class="n">smoothness_score</span><span class="p">)[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Correlation (Viscosity - Thickness): r = </span><span class="si">{</span><span class="n">r_thickness</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Correlation (Friction - Smoothness): r = </span><span class="si">{</span><span class="n">r_smoothness</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Correlation (Viscosity - Thickness): r = 0.952
-Correlation (Friction - Smoothness): r = -0.965
-</pre></div>
-</div>
-</div>
-</div>
+<section id="tribology-in-oral-processing">
+<h2>Tribology in Oral Processing<a class="headerlink" href="#tribology-in-oral-processing" title="Permalink to this heading">#</a></h2>
+<p>The Stribeck curve framework describes lubrication regimes in the oral cavity:</p>
+</section>
+<section id="why-fop-matters">
+<h2>Why FOP Matters<a class="headerlink" href="#why-fop-matters" title="Permalink to this heading">#</a></h2>
+<p>Understanding oral processing enables:</p>
+<ul class="simple">
+<li><p>Rational design of texture-modified foods for dysphagia patients</p></li>
+<li><p>Optimization of plant-based alternatives to match animal product mouthfeel</p></li>
+<li><p>Prediction of sensory attributes from instrumental measurements</p></li>
+<li><p>Reduction of fat, sugar, and salt while maintaining palatability</p></li>
+</ul>
+</section>
+<section id="references">
+<h2>References<a class="headerlink" href="#references" title="Permalink to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Chen, J. (2009). Food oral processing—A review. <em>Food Hydrocolloids</em>, 23(1), 1-25.</p></li>
+</ol>
 </section>
 </section>
 
@@ -526,20 +507,20 @@ Correlation (Friction - Smoothness): r = -0.965
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="chapter1.html"
+       href="intro.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><strong>Undergraduate Course: Food Oral Processing, Sensory Perception Modeling and Artificial Intelligence</strong></p>
+        <p class="prev-next-title">Introduction</p>
       </div>
     </a>
     <a class="right-next"
-       href="predictive_modeling.html"
+       href="demo.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Predictive Modeling of Food</p>
+        <p class="prev-next-title">2. Demo: Sensory Data Analysis with Python</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -559,15 +540,12 @@ Correlation (Friction - Smoothness): r = -0.965
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">2. Demo: Sensory Data Analysis with Python</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#we-import-liberies-and-data-for-viscosity-and-friction">1. We import liberies and data for viscosity and friction</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#we-plot-out-the-data-on-a-figure-plot">2. We plot out the data on a figure plot</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#we-calculate-the-correlation-coefficient">3. We calculate the correlation coefficient</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#correlation-analysis">Correlation Analysis</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-oral-processing-chain">The Oral Processing Chain</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-physical-parameters">Key Physical Parameters</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tribology-in-oral-processing">Tribology in Oral Processing</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#why-fop-matters">Why FOP Matters</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
 </ul>
-</li>
-</ul>
-
   </nav></div>
 
 </div></div>
