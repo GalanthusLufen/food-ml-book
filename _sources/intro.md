@@ -2,8 +2,7 @@
 
 # **Undergraduate Course: Food Oral Processing, Sensory Perception Modeling and Artificial Intelligence**
 
-<img src="toi_logo.jpg" alt="TOI Logo" width="180">
-
+![TOI Logo](toi_logo.jpg)
 
 Welcome to this e-book on combining food oral processing and sensory science research with artificial intelligence approaches.
 
