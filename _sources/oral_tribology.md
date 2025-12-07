@@ -1,251 +1,315 @@
-# Food Oral Processing
+# Oral Tribology and Signal Analysis
 
-Food oral processing (FOP) is a rapidly emerging cross-disciplinary research area in food science that reveals the scientific insights into eating and sensory perception. This chapter provides an overview of FOP fundamentals, covering the physics, physiology, and psychology of how humans interact with food during consumption.
+Oral tribology is an emerging field that studies friction, lubrication, and wear between interacting surfaces within the oral cavity. This chapter explores tribological principles relevant to food texture perception and introduces signal analysis approaches for characterizing oral friction mechanisms.
 
-## Introduction to Food Oral Processing
+## Introduction to Oral Tribology
 
-Food oral processing encompasses the complete journey of food from the moment it enters the mouth until swallowing. The field integrates principles from food physics, material science, oral physiology, sensory psychology, and neurology to understand how humans perceive and experience food texture, flavor, and mouthfeel.
+Unlike rheology, which characterizes bulk material properties, tribology examines system properties involving two interacting surfaces in relative motion with a fluid layer between them. In the oral context, this closely mimics the tongue moving against the hard palate with a thin layer of saliva and food between the surfaces.
 
-### The FOP Framework
+### Relevance to Food Texture
 
-The oral cavity serves as a sophisticated processing environment where multiple phenomena occur simultaneously:
+Tribological measurements provide insight into thin-film related texture attributes:
 
-- **Food destruction and reconstruction** — bolus formation through mastication
-- **Oral lubrication** — interaction between food, saliva, and oral surfaces  
-- **Food–saliva interactions** — enzymatic and physical modifications
-- **Flavor compound release** — aroma and taste diffusion
-- **Sensory perception** — tactile, gustatory, and olfactory stimulation
-- **Motor coordination** — tongue, teeth, and muscle function
+| Attribute | Tribological Basis |
+|-----------|-------------------|
+| Creaminess | Oil droplet coalescence, emulsion structure |
+| Smoothness | Low friction coefficient, particle size |
+| Slipperiness | Lubrication efficiency |
+| Greasiness | Fat film behavior |
+| Astringency | Salivary pellicle disruption |
 
-```{figure} ./images/fop.png
----
-name: fop-framework
----
-The Food Oral Processing framework illustrating the interplay between food physics, oral physiology, and sensory perception during eating.
+### The Stribeck Framework
+
+The Stribeck curve describes friction behavior across different lubrication regimes:
+
+```
+Friction Coefficient (μ)
+    │
+    │    Boundary
+    │      ╲
+    │       ╲    Mixed
+    │        ╲   ╱╲
+    │         ╲╱   ╲
+    │              ╲  Hydrodynamic
+    │               ╲___________
+    └────────────────────────────→
+           Sommerfeld Number (ηV/P)
 ```
 
-### Key Principles
-
-Several fundamental principles underpin FOP research:
-
-1. **Dynamic sensory perception** — Eating experience combines all perceivable sensory attributes (texture, aroma, taste) that are intercorrelated and exhibit dynamic changes closely influenced by oral breakdown of food structure.
-
-2. **Rheology–tribology transition** — The changing of dominating physical principles during oral processing reflects texture perception mechanisms, particularly mouthfeel sensations.
-
-3. **Saliva as an active ingredient** — Perception comes not from the stimuli of food alone, but from the stimuli of the bolus (food + saliva mixture), which differs completely from the ingested food.
-
-4. **Material vs. sensory properties** — Instruments measure material properties, not sensory properties. These are fundamentally different in nature.
-
-5. **Bolus rheology controls swallowing** — Good flowability and appropriate cohesiveness are critical for triggering safe swallowing.
-
-## Texture Perception
-
-Food texture is a sensory reflection of the structural, mechanical, and surface properties of food. However, texture perception depends on two main factors: food properties and individual oral physiology.
-
-### Cross-Disciplinary Interplay
-
-Texture perception emerges from the interplay between:
-
-**Food Physics:**
-- Fracture mechanics
-- Rheological properties
-- Tribological behavior
-
-**Oral Physiology:**
-- Mastication patterns
-- Structural destruction
-- Saliva interactions
-
-### Texture Attributes
-
-Common texture descriptors include:
-
-| Category | Attributes |
-|----------|-----------|
-| Mechanical | Hardness, firmness, crispness, crunchiness |
-| Adhesive | Cohesiveness, adhesiveness, stickiness |
-| Surface | Smoothness, grittiness, slipperiness |
-| Complex | Creaminess, mouthcoating |
-
-### Mastication and Chewing Behavior
-
-Mastication reduces food to smaller particle sizes while mixing with saliva. The process is controlled by:
-
-- **Selection function** — probability of a particle being selected for size reduction
-- **Breakage function** — extent of size reduction after one chewing cycle
-
-Key parameters for characterizing chewing behavior:
-- Chewing efficiency
-- Chewing capability  
-- Chewing performance
-- Number of chewing cycles before swallowing
-
-### Fracture and Rheology
-
-The physical basis of chewing involves deformation and flow of food material:
-
-**Solid foods:** Fracture mechanism determines sensations of hardness, crispness, crunchiness
-
-**Soft-solid foods (gels):** Deformation and breaking determine sensations of firmness, cohesiveness, stickiness
-
-**Fluid foods:** Flow behavior under shear determines viscosity perception
-
-### Oral Tribology
-
-Oral tribology concerns friction and lubrication inside the oral cavity between surfaces of food, tongue, teeth, and hard palate. Unlike rheology (bulk properties), tribology concerns system properties with two interacting surfaces in relative motion.
-
-Thin-film related texture attributes:
-- Creaminess
-- Smoothness
-- Slipperiness
-- Greasiness
-- Astringency
-
-The friction coefficient correlates strongly with perceived slipperiness, where lower friction corresponds to higher slipperiness ratings.
-
-## Flavor Perception
-
-Flavor combines sensory attributes from taste and aroma compounds perceived by specific receptors. The sensation is chemistry-dominant and highly dynamic.
-
-### Aroma Release and Perception
-
-Aroma perception occurs through two pathways:
-
-1. **Ortho-nasal olfaction** — via the nose during sniffing
-2. **Retro-nasal olfaction** — via the mouth during food consumption
-
-Factors affecting aroma release:
-- Chemical properties of aroma compounds
-- Physicochemical properties of food matrix
-- Food fragmentation during mastication
-- Saliva flow rate and composition
-- Oral volume and tongue pressure
-
-### Gustatory Perception
-
-Five basic tastes are recognized: sweet, salty, sour, bitter, and umami.
-
-**Key concept:** Saliva serves as a taste reference baseline. Tastants in normal saliva constantly stimulate receptors, perceived as tasteless due to self-adaptation. Taste perception occurs only when tastant concentrations differ from this baseline.
-
-### Taste Enhancement Strategies
-
-Structure manipulation can enhance taste perception:
-- Larger surface area during oral breakdown increases available tastants
-- Inhomogeneous spatial distribution creates pulsed delivery
-- Complex coacervates can achieve ~30% salt reduction without impacting perception
-
-## Bolus Swallowing
-
-Swallowing transfers the food bolus from oral cavity to stomach through coordinated muscle operation.
-
-### Swallowing Phases
-
-1. **Oral phase** — food mastication and mixing with saliva to form appropriate bolus
-2. **Oropharyngeal phase** — bolus transport to pharynx by tongue pressure
-3. **Esophageal phase** — bolus squeezed into esophagus by oropharyngeal pressure
-
-### Bolus Formation Model
-
-The breakdown path model describes eating and bolus formation using:
-- **Structure parameter** — dimensionless particle area (particle area / initial food area)
-- **Lubrication parameter** — friction coefficient representing lubrication status
-
-Food becomes swallowable when it reaches:
-- Appropriate particle size
-- Good lubrication status
-- Suitable cohesiveness
-
-### Swallowing Safety
-
-Safe swallowing requires proper bolus properties:
-- **Shear viscosity** — controls flow behavior
-- **Extensional viscosity** — maintains bolus cohesiveness during pharyngeal transit
-- **Cohesiveness** — prevents fracturing and splashing
-
-The International Dysphagia Diet Standardisation Initiative (IDDSI) provides texture grading standards for dysphagia management.
-
-## Eating Behavior
-
-Eating behavior research reveals consumer attitudes toward food consumption and health impacts. The way food is eaten affects consumption amount and satisfaction.
-
-### Oral Processing Parameters
-
-Key behavioral parameters:
-- Bite size
-- Chews per bite
-- Eating rate
-- Oral residence time
-
-### Satiation and Satiety
-
-**Satiation** — process resulting in meal termination, modified by cognitive and sensory processes during oral processing
-
-**Satiety** — suppression of hunger between meals, consequence of post-ingestive and post-absorptive processes
-
-Longer orosensory exposure (OSE) generally induces:
-- Earlier satiation
-- Enhanced subsequent satiety
-- Lower ad libitum food intake
-
-### Food Design Implications
-
-Texture modifications affecting eating behavior:
-- Harder foods → longer OSE → potential increased satiety
-- Higher viscosity → smaller bite size → lower intake
-- Increased textural complexity → slower eating rate
-
-## The FOP Wheel
-
-The FOP research landscape spans multiple interconnected domains:
-
-**Core Areas:**
-- Food material properties
-- Oral physiology
-- Food sensory perception
-- Eating behavior
-- Brain responses
-
-**Disciplinary Approaches:**
-- Rheology and tribology
-- Fracture mechanics
-- Bolus formation models
-- Swallowing safety assessment
-- Satiety/satiation measurement
-
-## Future Directions
-
-### Research Priorities
-
-1. **Saliva research** — physics, physiology, and manipulation of food–saliva interactions; individual and ethnic variation in saliva composition
-
-2. **Oral thin film** — functional properties affected by composition, fluid dynamics, mechanical strength, and permeability
-
-3. **Oral physiology** — functions of tongue, saliva, oral/orofacial muscles, and sensory receptors
-
-4. **Oral physics** — structural changes at multiple length scales; food–saliva interface phenomena; mass transfer at particle and molecule levels
-
-### Technical Challenges
-
-- Ethical restrictions on in vivo studies
-- Limited techniques for oral access (noninvasive or invasive)
-- Need for in vitro setups mimicking oral conditions
-- Development of noninvasive oral access technologies
+**Lubrication Regimes:**
+
+1. **Boundary regime** — Direct surface contact; friction dominated by surface properties and adsorbed films
+2. **Mixed regime** — Partial fluid film; combination of surface contact and hydrodynamic effects  
+3. **Hydrodynamic regime** — Complete fluid film separation; friction determined by fluid viscosity
+
+The Sommerfeld number combines:
+- η = fluid viscosity
+- V = sliding velocity (entrainment speed)
+- P = normal load (contact pressure)
+
+## Biomimetic Tribometer Design
+
+### Design Principles
+
+Effective oral tribometers must replicate key oral conditions:
+
+**Surface properties:**
+- Comparable hardness and viscoelasticity to oral tissues
+- Similar roughness to tongue papillae
+- Mucosal-film coating capability
+- Appropriate hydrophobicity
+
+**Operating parameters:**
+- Physiologically relevant sliding speeds (1–100 mm/s)
+- Realistic contact pressures (0.01–2 N)
+- Temperature control (~37°C)
+- Saliva compatibility
+
+### Custom-Built Tribometer Systems
+
+Several approaches have been developed for oral tribology:
+
+**Texture analyzer-based tribometer:**
+- Novel attachment converting texture analyzer for tribological measurements
+- Reliable and affordable alternative to commercial tribometers
+- Successfully applied to wine astringency, toothpaste smoothness, yogurt creaminess
+
+**Soft oral tribometer (STAT):**
+- PDMS substrates mimicking soft oral tissues
+- Enables study of deformable contact conditions
+- Better represents tongue-palate interactions
+
+**In situ oral tribometer:**
+- Synchronization with IOPI (Iowa Oral Performance Instrument)
+- First measurements of oral lubrication in vivo
+- Pressure sensor used as probe for normal load detection
+
+## Signal Analysis for Friction Characterization
+
+### The Stick-Slip Phenomenon
+
+During tribological measurements, friction signals often exhibit oscillatory behavior known as stick-slip. This phenomenon provides valuable information about:
+
+- Surface texture interactions
+- Lubrication film stability
+- Particle entrainment effects
+- Food microstructure breakdown
+
+### Spectral Analysis Approach
+
+Friction force signals can be analyzed using spectral methods to extract meaningful texture information:
+
+**Time-domain features:**
+- Mean friction coefficient
+- Standard deviation (signal roughness)
+- Peak-to-peak amplitude
+- Autocorrelation characteristics
+
+**Frequency-domain features:**
+- Power spectral density
+- Dominant frequencies
+- Spectral centroid
+- Bandwidth characteristics
+
+### Signal Processing Pipeline
+
+```python
+# Conceptual signal analysis workflow
+import numpy as np
+from scipy import signal
+from scipy.fft import fft, fftfreq
+
+def analyze_friction_signal(friction_data, sampling_rate):
+    """
+    Analyze friction signal for texture characterization.
+    
+    Parameters
+    ----------
+    friction_data : array
+        Raw friction force measurements
+    sampling_rate : float
+        Data acquisition rate (Hz)
+    
+    Returns
+    -------
+    dict
+        Time and frequency domain features
+    """
+    # Time-domain analysis
+    mean_friction = np.mean(friction_data)
+    std_friction = np.std(friction_data)
+    
+    # Detrend signal
+    detrended = signal.detrend(friction_data)
+    
+    # Frequency-domain analysis
+    n = len(detrended)
+    frequencies = fftfreq(n, 1/sampling_rate)
+    fft_values = fft(detrended)
+    power_spectrum = np.abs(fft_values)**2
+    
+    # Extract spectral features
+    positive_freqs = frequencies[:n//2]
+    positive_power = power_spectrum[:n//2]
+    
+    # Spectral centroid
+    centroid = np.sum(positive_freqs * positive_power) / np.sum(positive_power)
+    
+    return {
+        'mean_friction': mean_friction,
+        'std_friction': std_friction,
+        'spectral_centroid': centroid,
+        'dominant_frequency': positive_freqs[np.argmax(positive_power)]
+    }
+```
+
+### Tongue Roughness Effects
+
+The tongue surface exhibits complex topography with different papillae types:
+
+| Papillae Type | Function | Tribological Impact |
+|---------------|----------|-------------------|
+| Filiform | Mechanical grip | Increased boundary friction |
+| Fungiform | Taste sensation | Local pressure variations |
+| Foliate | Taste (lateral) | Edge effects |
+| Circumvallate | Taste (posterior) | Flow disruption |
+
+Individual tongue roughness significantly affects:
+- Friction coefficient magnitude
+- Stick-slip frequency
+- Lubrication regime transitions
+- Sensory perception intensity
+
+## Food–Saliva Interactions in Tribology
+
+### Saliva Functions
+
+Saliva plays multiple roles in oral lubrication:
+
+1. **Wetting and lubricating** oral surfaces
+2. **Aggregating food particles** into cohesive bolus
+3. **Interacting chemically** with food components
+4. **Forming salivary pellicle** on oral surfaces
+
+### Interaction Mechanisms
+
+Food–saliva interactions alter tribological behavior through:
+
+- **Surface coating** — protein adsorption changes surface properties
+- **Particle clustering** — affects entrainment behavior
+- **Colloidal interactions** — bridging, depletion, steric effects
+- **Complexation** — protein–polysaccharide interactions
+- **Enzymatic activity** — starch breakdown by α-amylase
+
+### Oral Emulsification
+
+A significant finding in oral tribology is that saliva can act as an emulsifier:
+
+- Oil/fat is immediately dispersed when mixed with saliva
+- Individual capability for oral emulsification varies
+- This affects the transition from creaminess to greasiness perception
+- Challenges traditional theories of fat sensation based on bulk lubrication
+
+## Correlating Tribology with Sensory Perception
+
+### Friction–Sensory Relationships
+
+Strong correlations have been established between tribological measurements and sensory attributes:
+
+**Slipperiness:**
+```
+Slipperiness ∝ 1/μ
+```
+Lower friction coefficient corresponds to higher perceived slipperiness (R² > 0.99 reported).
+
+**Creaminess:**
+```
+Creaminess = f(μ, η, droplet size, coalescence)
+```
+Higher emulsion viscosity with lower friction typically increases creaminess perception, though saliva presence complicates this relationship.
+
+**Astringency:**
+```
+Astringency ∝ μ at low sliding speeds
+```
+Red wine astringency correlates with friction coefficient at ~0.075 mm/s (R² = 0.93).
+
+### Limitations and Challenges
+
+Current obstacles in applying tribology to sensory prediction:
+
+1. **Vague attribute definitions** — thin-film texture terms lack precise definition
+2. **Substrate variability** — no standardized oral-mimicking surfaces
+3. **Tribometer settings** — varied configurations across studies
+4. **Saliva complexity** — large inter- and intra-individual variation
+5. **Tongue topography** — difficult to replicate in vitro
+
+## Advanced Tribological Methods
+
+### Dynamic Tribology Protocol (DTP)
+
+Protocol for studying salivary pellicle response to food interactions:
+
+1. Form salivary pellicle on substrate
+2. Introduce test food/ingredient
+3. Monitor friction evolution over time
+4. Correlate with sensory perception
+
+### In Situ Oral Measurements
+
+The synchronization of tribometers with oral pressure sensors enables:
+
+- Real-time measurement of oral friction
+- Correlation with tongue pressure
+- Recording as function of time or sliding distance
+- Validation against sensory ratings
+
+```{figure} or.png
+---
+name: oral-tribometer-setup
+---
+Schematic of biomimetic oral tribometer setup with various sensors.
+```
+
+## Applications
+
+### Food Product Development
+
+Tribological screening for:
+- Fat replacement strategies
+- Creaminess optimization in low-fat products
+- Astringency management in beverages
+- Mouthcoating reduction in protein drinks
+
+### Dysphagia Management
+
+Understanding lubrication for safe swallowing:
+- Thickened fluid optimization
+- Bolus cohesiveness assessment
+- Residue prediction
+
+### Oral Care Products
+
+Formulation optimization for:
+- Toothpaste smoothness
+- Mouthwash feel
+- Denture lubricants
 
 ## Summary
 
-Food oral processing provides a comprehensive framework for understanding eating and sensory perception by integrating:
+Oral tribology bridges the gap between instrumental measurements and sensory perception of thin-film texture attributes. Key advances include:
 
-- Food physics with oral physiology
-- Instrumental measurements with sensory perception
-- Material properties with human experience
+- **Biomimetic tribometer design** — surfaces and conditions mimicking oral cavity
+- **Signal analysis methods** — extracting texture information from friction signals
+- **Food–saliva interaction understanding** — recognizing saliva's active role
+- **In situ measurement capability** — validating in vitro findings
 
-The field offers new approaches to food design, particularly for:
-- Texture optimization
-- Flavor enhancement with reduced sugar/salt
-- Foods for special populations (elderly, dysphagia patients)
-- Health-oriented products balancing pleasure and nutrition
+Future developments should focus on:
+- Standardized substrates and protocols
+- Individual variation modeling
+- Multi-modal sensing integration
+- Real-time texture prediction
 
 ## References
-
-1. Chen, J. (2009). Food oral processing—A review. *Food Hydrocolloids*, 23(1), 1–25.
-2. Chen, J., & Stokes, J.R. (2012). Rheology and tribology: Two distinctive regimes of food texture sensation. *Trends in Food Science & Technology*, 25(1), 4–12.
+1. Chen, J., & Stokes, J.R. (2012). Rheology and tribology: Two distinctive regimes of food texture sensation. *Trends in Food Science & Technology*, 25(1), 4–12.
+2. Glumac, M., Bosc, V., Menut, P., Ramaioli, M., Restagno, F., Mariot, S., & Mathieu, V. (2023). Signal analysis to study the impact of tongue roughness on oral friction mechanisms with a custom-built tribometer. *Biotribology*, 35–36, 100257

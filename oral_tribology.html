@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Food Oral Processing &#8212; Food Oral Processing, Sensory Perception &amp; Artificial Intelligence</title>
+    <title>Oral Tribology and Signal Analysis &#8212; Food Oral Processing, Sensory Perception &amp; Artificial Intelligence</title>
   
   
   
@@ -65,7 +65,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'oral_tribology';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="Predictive Modeling for Sensory Perception" href="predictive_modeling.html" />
+    <link rel="prev" title="2. Demo: Sensory Data Analysis with Python" href="demo.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -176,13 +176,13 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="fop.html">1. Food Oral Processing &amp; Sensory Science</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Practical Demos with Python</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="demo.html">2. Demo: Sensory Data Analysis with Python</a></li>
-</ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Predictive Modeling</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="predictive_modeling.html">3. Predictive Modeling of Sensory Attributes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="predictive_modeling.html">2. Predictive Modeling of Sensory Attributes</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Practical Demos with Python</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="demo.html">3. Demo: Sensory Data Analysis with Python</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Oral Tribology &amp; Sensory Perception</span></p>
 <ul class="current nav bd-sidenav">
@@ -372,7 +372,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Food Oral Processing</h1>
+    <h1>Oral Tribology and Signal Analysis</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -382,41 +382,43 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction-to-food-oral-processing">Introduction to Food Oral Processing</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-fop-framework">The FOP Framework</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#key-principles">Key Principles</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction-to-oral-tribology">Introduction to Oral Tribology</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#relevance-to-food-texture">Relevance to Food Texture</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-stribeck-framework">The Stribeck Framework</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#texture-perception">Texture Perception</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cross-disciplinary-interplay">Cross-Disciplinary Interplay</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#texture-attributes">Texture Attributes</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mastication-and-chewing-behavior">Mastication and Chewing Behavior</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fracture-and-rheology">Fracture and Rheology</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#oral-tribology">Oral Tribology</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#biomimetic-tribometer-design">Biomimetic Tribometer Design</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#design-principles">Design Principles</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#custom-built-tribometer-systems">Custom-Built Tribometer Systems</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#flavor-perception">Flavor Perception</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#aroma-release-and-perception">Aroma Release and Perception</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gustatory-perception">Gustatory Perception</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#taste-enhancement-strategies">Taste Enhancement Strategies</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#signal-analysis-for-friction-characterization">Signal Analysis for Friction Characterization</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-stick-slip-phenomenon">The Stick-Slip Phenomenon</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#spectral-analysis-approach">Spectral Analysis Approach</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#signal-processing-pipeline">Signal Processing Pipeline</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tongue-roughness-effects">Tongue Roughness Effects</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bolus-swallowing">Bolus Swallowing</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#swallowing-phases">Swallowing Phases</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bolus-formation-model">Bolus Formation Model</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#swallowing-safety">Swallowing Safety</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#foodsaliva-interactions-in-tribology">Food–Saliva Interactions in Tribology</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#saliva-functions">Saliva Functions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#interaction-mechanisms">Interaction Mechanisms</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#oral-emulsification">Oral Emulsification</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#eating-behavior">Eating Behavior</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#oral-processing-parameters">Oral Processing Parameters</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#satiation-and-satiety">Satiation and Satiety</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#food-design-implications">Food Design Implications</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#correlating-tribology-with-sensory-perception">Correlating Tribology with Sensory Perception</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#frictionsensory-relationships">Friction–Sensory Relationships</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#limitations-and-challenges">Limitations and Challenges</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-fop-wheel">The FOP Wheel</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#future-directions">Future Directions</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#research-priorities">Research Priorities</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#technical-challenges">Technical Challenges</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#advanced-tribological-methods">Advanced Tribological Methods</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dynamic-tribology-protocol-dtp">Dynamic Tribology Protocol (DTP)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#in-situ-oral-measurements">In Situ Oral Measurements</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#applications">Applications</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#food-product-development">Food Product Development</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dysphagia-management">Dysphagia Management</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#oral-care-products">Oral Care Products</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">Summary</a></li>
@@ -432,289 +434,384 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="food-oral-processing">
-<h1>Food Oral Processing<a class="headerlink" href="#food-oral-processing" title="Permalink to this heading">#</a></h1>
-<p>Food oral processing (FOP) is a rapidly emerging cross-disciplinary research area in food science that reveals the scientific insights into eating and sensory perception. This chapter provides an overview of FOP fundamentals, covering the physics, physiology, and psychology of how humans interact with food during consumption.</p>
-<section id="introduction-to-food-oral-processing">
-<h2>Introduction to Food Oral Processing<a class="headerlink" href="#introduction-to-food-oral-processing" title="Permalink to this heading">#</a></h2>
-<p>Food oral processing encompasses the complete journey of food from the moment it enters the mouth until swallowing. The field integrates principles from food physics, material science, oral physiology, sensory psychology, and neurology to understand how humans perceive and experience food texture, flavor, and mouthfeel.</p>
-<section id="the-fop-framework">
-<h3>The FOP Framework<a class="headerlink" href="#the-fop-framework" title="Permalink to this heading">#</a></h3>
-<p>The oral cavity serves as a sophisticated processing environment where multiple phenomena occur simultaneously:</p>
-<ul class="simple">
-<li><p><strong>Food destruction and reconstruction</strong> — bolus formation through mastication</p></li>
-<li><p><strong>Oral lubrication</strong> — interaction between food, saliva, and oral surfaces</p></li>
-<li><p><strong>Food–saliva interactions</strong> — enzymatic and physical modifications</p></li>
-<li><p><strong>Flavor compound release</strong> — aroma and taste diffusion</p></li>
-<li><p><strong>Sensory perception</strong> — tactile, gustatory, and olfactory stimulation</p></li>
-<li><p><strong>Motor coordination</strong> — tongue, teeth, and muscle function</p></li>
-</ul>
-<figure class="align-default" id="fop-framework">
-<img alt="images/fop.png" src="images/fop.png" />
-<figcaption>
-<p><span class="caption-number">Fig. 3 </span><span class="caption-text">The Food Oral Processing framework illustrating the interplay between food physics, oral physiology, and sensory perception during eating.</span><a class="headerlink" href="#fop-framework" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
-</section>
-<section id="key-principles">
-<h3>Key Principles<a class="headerlink" href="#key-principles" title="Permalink to this heading">#</a></h3>
-<p>Several fundamental principles underpin FOP research:</p>
-<ol class="arabic simple">
-<li><p><strong>Dynamic sensory perception</strong> — Eating experience combines all perceivable sensory attributes (texture, aroma, taste) that are intercorrelated and exhibit dynamic changes closely influenced by oral breakdown of food structure.</p></li>
-<li><p><strong>Rheology–tribology transition</strong> — The changing of dominating physical principles during oral processing reflects texture perception mechanisms, particularly mouthfeel sensations.</p></li>
-<li><p><strong>Saliva as an active ingredient</strong> — Perception comes not from the stimuli of food alone, but from the stimuli of the bolus (food + saliva mixture), which differs completely from the ingested food.</p></li>
-<li><p><strong>Material vs. sensory properties</strong> — Instruments measure material properties, not sensory properties. These are fundamentally different in nature.</p></li>
-<li><p><strong>Bolus rheology controls swallowing</strong> — Good flowability and appropriate cohesiveness are critical for triggering safe swallowing.</p></li>
-</ol>
-</section>
-</section>
-<section id="texture-perception">
-<h2>Texture Perception<a class="headerlink" href="#texture-perception" title="Permalink to this heading">#</a></h2>
-<p>Food texture is a sensory reflection of the structural, mechanical, and surface properties of food. However, texture perception depends on two main factors: food properties and individual oral physiology.</p>
-<section id="cross-disciplinary-interplay">
-<h3>Cross-Disciplinary Interplay<a class="headerlink" href="#cross-disciplinary-interplay" title="Permalink to this heading">#</a></h3>
-<p>Texture perception emerges from the interplay between:</p>
-<p><strong>Food Physics:</strong></p>
-<ul class="simple">
-<li><p>Fracture mechanics</p></li>
-<li><p>Rheological properties</p></li>
-<li><p>Tribological behavior</p></li>
-</ul>
-<p><strong>Oral Physiology:</strong></p>
-<ul class="simple">
-<li><p>Mastication patterns</p></li>
-<li><p>Structural destruction</p></li>
-<li><p>Saliva interactions</p></li>
-</ul>
-</section>
-<section id="texture-attributes">
-<h3>Texture Attributes<a class="headerlink" href="#texture-attributes" title="Permalink to this heading">#</a></h3>
-<p>Common texture descriptors include:</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="oral-tribology-and-signal-analysis">
+<h1>Oral Tribology and Signal Analysis<a class="headerlink" href="#oral-tribology-and-signal-analysis" title="Permalink to this heading">#</a></h1>
+<p>Oral tribology is an emerging field that studies friction, lubrication, and wear between interacting surfaces within the oral cavity. This chapter explores tribological principles relevant to food texture perception and introduces signal analysis approaches for characterizing oral friction mechanisms.</p>
+<section id="introduction-to-oral-tribology">
+<h2>Introduction to Oral Tribology<a class="headerlink" href="#introduction-to-oral-tribology" title="Permalink to this heading">#</a></h2>
+<p>Unlike rheology, which characterizes bulk material properties, tribology examines system properties involving two interacting surfaces in relative motion with a fluid layer between them. In the oral context, this closely mimics the tongue moving against the hard palate with a thin layer of saliva and food between the surfaces.</p>
+<section id="relevance-to-food-texture">
+<h3>Relevance to Food Texture<a class="headerlink" href="#relevance-to-food-texture" title="Permalink to this heading">#</a></h3>
+<p>Tribological measurements provide insight into thin-film related texture attributes:</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
-<tr class="row-odd"><th class="head"><p>Category</p></th>
-<th class="head"><p>Attributes</p></th>
+<tr class="row-odd"><th class="head"><p>Attribute</p></th>
+<th class="head"><p>Tribological Basis</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>Mechanical</p></td>
-<td><p>Hardness, firmness, crispness, crunchiness</p></td>
+<tr class="row-even"><td><p>Creaminess</p></td>
+<td><p>Oil droplet coalescence, emulsion structure</p></td>
 </tr>
-<tr class="row-odd"><td><p>Adhesive</p></td>
-<td><p>Cohesiveness, adhesiveness, stickiness</p></td>
+<tr class="row-odd"><td><p>Smoothness</p></td>
+<td><p>Low friction coefficient, particle size</p></td>
 </tr>
-<tr class="row-even"><td><p>Surface</p></td>
-<td><p>Smoothness, grittiness, slipperiness</p></td>
+<tr class="row-even"><td><p>Slipperiness</p></td>
+<td><p>Lubrication efficiency</p></td>
 </tr>
-<tr class="row-odd"><td><p>Complex</p></td>
-<td><p>Creaminess, mouthcoating</p></td>
+<tr class="row-odd"><td><p>Greasiness</p></td>
+<td><p>Fat film behavior</p></td>
+</tr>
+<tr class="row-even"><td><p>Astringency</p></td>
+<td><p>Salivary pellicle disruption</p></td>
 </tr>
 </tbody>
 </table>
 </div>
 </section>
-<section id="mastication-and-chewing-behavior">
-<h3>Mastication and Chewing Behavior<a class="headerlink" href="#mastication-and-chewing-behavior" title="Permalink to this heading">#</a></h3>
-<p>Mastication reduces food to smaller particle sizes while mixing with saliva. The process is controlled by:</p>
-<ul class="simple">
-<li><p><strong>Selection function</strong> — probability of a particle being selected for size reduction</p></li>
-<li><p><strong>Breakage function</strong> — extent of size reduction after one chewing cycle</p></li>
-</ul>
-<p>Key parameters for characterizing chewing behavior:</p>
-<ul class="simple">
-<li><p>Chewing efficiency</p></li>
-<li><p>Chewing capability</p></li>
-<li><p>Chewing performance</p></li>
-<li><p>Number of chewing cycles before swallowing</p></li>
-</ul>
-</section>
-<section id="fracture-and-rheology">
-<h3>Fracture and Rheology<a class="headerlink" href="#fracture-and-rheology" title="Permalink to this heading">#</a></h3>
-<p>The physical basis of chewing involves deformation and flow of food material:</p>
-<p><strong>Solid foods:</strong> Fracture mechanism determines sensations of hardness, crispness, crunchiness</p>
-<p><strong>Soft-solid foods (gels):</strong> Deformation and breaking determine sensations of firmness, cohesiveness, stickiness</p>
-<p><strong>Fluid foods:</strong> Flow behavior under shear determines viscosity perception</p>
-</section>
-<section id="oral-tribology">
-<h3>Oral Tribology<a class="headerlink" href="#oral-tribology" title="Permalink to this heading">#</a></h3>
-<p>Oral tribology concerns friction and lubrication inside the oral cavity between surfaces of food, tongue, teeth, and hard palate. Unlike rheology (bulk properties), tribology concerns system properties with two interacting surfaces in relative motion.</p>
-<p>Thin-film related texture attributes:</p>
-<ul class="simple">
-<li><p>Creaminess</p></li>
-<li><p>Smoothness</p></li>
-<li><p>Slipperiness</p></li>
-<li><p>Greasiness</p></li>
-<li><p>Astringency</p></li>
-</ul>
-<p>The friction coefficient correlates strongly with perceived slipperiness, where lower friction corresponds to higher slipperiness ratings.</p>
-</section>
-</section>
-<section id="flavor-perception">
-<h2>Flavor Perception<a class="headerlink" href="#flavor-perception" title="Permalink to this heading">#</a></h2>
-<p>Flavor combines sensory attributes from taste and aroma compounds perceived by specific receptors. The sensation is chemistry-dominant and highly dynamic.</p>
-<section id="aroma-release-and-perception">
-<h3>Aroma Release and Perception<a class="headerlink" href="#aroma-release-and-perception" title="Permalink to this heading">#</a></h3>
-<p>Aroma perception occurs through two pathways:</p>
+<section id="the-stribeck-framework">
+<h3>The Stribeck Framework<a class="headerlink" href="#the-stribeck-framework" title="Permalink to this heading">#</a></h3>
+<p>The Stribeck curve describes friction behavior across different lubrication regimes:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Friction Coefficient (μ)
+    │
+    │    Boundary
+    │      ╲
+    │       ╲    Mixed
+    │        ╲   ╱╲
+    │         ╲╱   ╲
+    │              ╲  Hydrodynamic
+    │               ╲___________
+    └────────────────────────────→
+           Sommerfeld Number (ηV/P)
+</pre></div>
+</div>
+<p><strong>Lubrication Regimes:</strong></p>
 <ol class="arabic simple">
-<li><p><strong>Ortho-nasal olfaction</strong> — via the nose during sniffing</p></li>
-<li><p><strong>Retro-nasal olfaction</strong> — via the mouth during food consumption</p></li>
+<li><p><strong>Boundary regime</strong> — Direct surface contact; friction dominated by surface properties and adsorbed films</p></li>
+<li><p><strong>Mixed regime</strong> — Partial fluid film; combination of surface contact and hydrodynamic effects</p></li>
+<li><p><strong>Hydrodynamic regime</strong> — Complete fluid film separation; friction determined by fluid viscosity</p></li>
 </ol>
-<p>Factors affecting aroma release:</p>
+<p>The Sommerfeld number combines:</p>
 <ul class="simple">
-<li><p>Chemical properties of aroma compounds</p></li>
-<li><p>Physicochemical properties of food matrix</p></li>
-<li><p>Food fragmentation during mastication</p></li>
-<li><p>Saliva flow rate and composition</p></li>
-<li><p>Oral volume and tongue pressure</p></li>
-</ul>
-</section>
-<section id="gustatory-perception">
-<h3>Gustatory Perception<a class="headerlink" href="#gustatory-perception" title="Permalink to this heading">#</a></h3>
-<p>Five basic tastes are recognized: sweet, salty, sour, bitter, and umami.</p>
-<p><strong>Key concept:</strong> Saliva serves as a taste reference baseline. Tastants in normal saliva constantly stimulate receptors, perceived as tasteless due to self-adaptation. Taste perception occurs only when tastant concentrations differ from this baseline.</p>
-</section>
-<section id="taste-enhancement-strategies">
-<h3>Taste Enhancement Strategies<a class="headerlink" href="#taste-enhancement-strategies" title="Permalink to this heading">#</a></h3>
-<p>Structure manipulation can enhance taste perception:</p>
-<ul class="simple">
-<li><p>Larger surface area during oral breakdown increases available tastants</p></li>
-<li><p>Inhomogeneous spatial distribution creates pulsed delivery</p></li>
-<li><p>Complex coacervates can achieve ~30% salt reduction without impacting perception</p></li>
+<li><p>η = fluid viscosity</p></li>
+<li><p>V = sliding velocity (entrainment speed)</p></li>
+<li><p>P = normal load (contact pressure)</p></li>
 </ul>
 </section>
 </section>
-<section id="bolus-swallowing">
-<h2>Bolus Swallowing<a class="headerlink" href="#bolus-swallowing" title="Permalink to this heading">#</a></h2>
-<p>Swallowing transfers the food bolus from oral cavity to stomach through coordinated muscle operation.</p>
-<section id="swallowing-phases">
-<h3>Swallowing Phases<a class="headerlink" href="#swallowing-phases" title="Permalink to this heading">#</a></h3>
+<section id="biomimetic-tribometer-design">
+<h2>Biomimetic Tribometer Design<a class="headerlink" href="#biomimetic-tribometer-design" title="Permalink to this heading">#</a></h2>
+<section id="design-principles">
+<h3>Design Principles<a class="headerlink" href="#design-principles" title="Permalink to this heading">#</a></h3>
+<p>Effective oral tribometers must replicate key oral conditions:</p>
+<p><strong>Surface properties:</strong></p>
+<ul class="simple">
+<li><p>Comparable hardness and viscoelasticity to oral tissues</p></li>
+<li><p>Similar roughness to tongue papillae</p></li>
+<li><p>Mucosal-film coating capability</p></li>
+<li><p>Appropriate hydrophobicity</p></li>
+</ul>
+<p><strong>Operating parameters:</strong></p>
+<ul class="simple">
+<li><p>Physiologically relevant sliding speeds (1–100 mm/s)</p></li>
+<li><p>Realistic contact pressures (0.01–2 N)</p></li>
+<li><p>Temperature control (~37°C)</p></li>
+<li><p>Saliva compatibility</p></li>
+</ul>
+</section>
+<section id="custom-built-tribometer-systems">
+<h3>Custom-Built Tribometer Systems<a class="headerlink" href="#custom-built-tribometer-systems" title="Permalink to this heading">#</a></h3>
+<p>Several approaches have been developed for oral tribology:</p>
+<p><strong>Texture analyzer-based tribometer:</strong></p>
+<ul class="simple">
+<li><p>Novel attachment converting texture analyzer for tribological measurements</p></li>
+<li><p>Reliable and affordable alternative to commercial tribometers</p></li>
+<li><p>Successfully applied to wine astringency, toothpaste smoothness, yogurt creaminess</p></li>
+</ul>
+<p><strong>Soft oral tribometer (STAT):</strong></p>
+<ul class="simple">
+<li><p>PDMS substrates mimicking soft oral tissues</p></li>
+<li><p>Enables study of deformable contact conditions</p></li>
+<li><p>Better represents tongue-palate interactions</p></li>
+</ul>
+<p><strong>In situ oral tribometer:</strong></p>
+<ul class="simple">
+<li><p>Synchronization with IOPI (Iowa Oral Performance Instrument)</p></li>
+<li><p>First measurements of oral lubrication in vivo</p></li>
+<li><p>Pressure sensor used as probe for normal load detection</p></li>
+</ul>
+</section>
+</section>
+<section id="signal-analysis-for-friction-characterization">
+<h2>Signal Analysis for Friction Characterization<a class="headerlink" href="#signal-analysis-for-friction-characterization" title="Permalink to this heading">#</a></h2>
+<section id="the-stick-slip-phenomenon">
+<h3>The Stick-Slip Phenomenon<a class="headerlink" href="#the-stick-slip-phenomenon" title="Permalink to this heading">#</a></h3>
+<p>During tribological measurements, friction signals often exhibit oscillatory behavior known as stick-slip. This phenomenon provides valuable information about:</p>
+<ul class="simple">
+<li><p>Surface texture interactions</p></li>
+<li><p>Lubrication film stability</p></li>
+<li><p>Particle entrainment effects</p></li>
+<li><p>Food microstructure breakdown</p></li>
+</ul>
+</section>
+<section id="spectral-analysis-approach">
+<h3>Spectral Analysis Approach<a class="headerlink" href="#spectral-analysis-approach" title="Permalink to this heading">#</a></h3>
+<p>Friction force signals can be analyzed using spectral methods to extract meaningful texture information:</p>
+<p><strong>Time-domain features:</strong></p>
+<ul class="simple">
+<li><p>Mean friction coefficient</p></li>
+<li><p>Standard deviation (signal roughness)</p></li>
+<li><p>Peak-to-peak amplitude</p></li>
+<li><p>Autocorrelation characteristics</p></li>
+</ul>
+<p><strong>Frequency-domain features:</strong></p>
+<ul class="simple">
+<li><p>Power spectral density</p></li>
+<li><p>Dominant frequencies</p></li>
+<li><p>Spectral centroid</p></li>
+<li><p>Bandwidth characteristics</p></li>
+</ul>
+</section>
+<section id="signal-processing-pipeline">
+<h3>Signal Processing Pipeline<a class="headerlink" href="#signal-processing-pipeline" title="Permalink to this heading">#</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Conceptual signal analysis workflow</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">scipy</span><span class="w"> </span><span class="kn">import</span> <span class="n">signal</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">scipy.fft</span><span class="w"> </span><span class="kn">import</span> <span class="n">fft</span><span class="p">,</span> <span class="n">fftfreq</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">analyze_friction_signal</span><span class="p">(</span><span class="n">friction_data</span><span class="p">,</span> <span class="n">sampling_rate</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Analyze friction signal for texture characterization.</span>
+<span class="sd">    </span>
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    friction_data : array</span>
+<span class="sd">        Raw friction force measurements</span>
+<span class="sd">    sampling_rate : float</span>
+<span class="sd">        Data acquisition rate (Hz)</span>
+<span class="sd">    </span>
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    dict</span>
+<span class="sd">        Time and frequency domain features</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># Time-domain analysis</span>
+    <span class="n">mean_friction</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">friction_data</span><span class="p">)</span>
+    <span class="n">std_friction</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">std</span><span class="p">(</span><span class="n">friction_data</span><span class="p">)</span>
+    
+    <span class="c1"># Detrend signal</span>
+    <span class="n">detrended</span> <span class="o">=</span> <span class="n">signal</span><span class="o">.</span><span class="n">detrend</span><span class="p">(</span><span class="n">friction_data</span><span class="p">)</span>
+    
+    <span class="c1"># Frequency-domain analysis</span>
+    <span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">detrended</span><span class="p">)</span>
+    <span class="n">frequencies</span> <span class="o">=</span> <span class="n">fftfreq</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="mi">1</span><span class="o">/</span><span class="n">sampling_rate</span><span class="p">)</span>
+    <span class="n">fft_values</span> <span class="o">=</span> <span class="n">fft</span><span class="p">(</span><span class="n">detrended</span><span class="p">)</span>
+    <span class="n">power_spectrum</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">fft_values</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span>
+    
+    <span class="c1"># Extract spectral features</span>
+    <span class="n">positive_freqs</span> <span class="o">=</span> <span class="n">frequencies</span><span class="p">[:</span><span class="n">n</span><span class="o">//</span><span class="mi">2</span><span class="p">]</span>
+    <span class="n">positive_power</span> <span class="o">=</span> <span class="n">power_spectrum</span><span class="p">[:</span><span class="n">n</span><span class="o">//</span><span class="mi">2</span><span class="p">]</span>
+    
+    <span class="c1"># Spectral centroid</span>
+    <span class="n">centroid</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">positive_freqs</span> <span class="o">*</span> <span class="n">positive_power</span><span class="p">)</span> <span class="o">/</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">positive_power</span><span class="p">)</span>
+    
+    <span class="k">return</span> <span class="p">{</span>
+        <span class="s1">&#39;mean_friction&#39;</span><span class="p">:</span> <span class="n">mean_friction</span><span class="p">,</span>
+        <span class="s1">&#39;std_friction&#39;</span><span class="p">:</span> <span class="n">std_friction</span><span class="p">,</span>
+        <span class="s1">&#39;spectral_centroid&#39;</span><span class="p">:</span> <span class="n">centroid</span><span class="p">,</span>
+        <span class="s1">&#39;dominant_frequency&#39;</span><span class="p">:</span> <span class="n">positive_freqs</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="n">positive_power</span><span class="p">)]</span>
+    <span class="p">}</span>
+</pre></div>
+</div>
+</section>
+<section id="tongue-roughness-effects">
+<h3>Tongue Roughness Effects<a class="headerlink" href="#tongue-roughness-effects" title="Permalink to this heading">#</a></h3>
+<p>The tongue surface exhibits complex topography with different papillae types:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Papillae Type</p></th>
+<th class="head"><p>Function</p></th>
+<th class="head"><p>Tribological Impact</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Filiform</p></td>
+<td><p>Mechanical grip</p></td>
+<td><p>Increased boundary friction</p></td>
+</tr>
+<tr class="row-odd"><td><p>Fungiform</p></td>
+<td><p>Taste sensation</p></td>
+<td><p>Local pressure variations</p></td>
+</tr>
+<tr class="row-even"><td><p>Foliate</p></td>
+<td><p>Taste (lateral)</p></td>
+<td><p>Edge effects</p></td>
+</tr>
+<tr class="row-odd"><td><p>Circumvallate</p></td>
+<td><p>Taste (posterior)</p></td>
+<td><p>Flow disruption</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Individual tongue roughness significantly affects:</p>
+<ul class="simple">
+<li><p>Friction coefficient magnitude</p></li>
+<li><p>Stick-slip frequency</p></li>
+<li><p>Lubrication regime transitions</p></li>
+<li><p>Sensory perception intensity</p></li>
+</ul>
+</section>
+</section>
+<section id="foodsaliva-interactions-in-tribology">
+<h2>Food–Saliva Interactions in Tribology<a class="headerlink" href="#foodsaliva-interactions-in-tribology" title="Permalink to this heading">#</a></h2>
+<section id="saliva-functions">
+<h3>Saliva Functions<a class="headerlink" href="#saliva-functions" title="Permalink to this heading">#</a></h3>
+<p>Saliva plays multiple roles in oral lubrication:</p>
 <ol class="arabic simple">
-<li><p><strong>Oral phase</strong> — food mastication and mixing with saliva to form appropriate bolus</p></li>
-<li><p><strong>Oropharyngeal phase</strong> — bolus transport to pharynx by tongue pressure</p></li>
-<li><p><strong>Esophageal phase</strong> — bolus squeezed into esophagus by oropharyngeal pressure</p></li>
+<li><p><strong>Wetting and lubricating</strong> oral surfaces</p></li>
+<li><p><strong>Aggregating food particles</strong> into cohesive bolus</p></li>
+<li><p><strong>Interacting chemically</strong> with food components</p></li>
+<li><p><strong>Forming salivary pellicle</strong> on oral surfaces</p></li>
 </ol>
 </section>
-<section id="bolus-formation-model">
-<h3>Bolus Formation Model<a class="headerlink" href="#bolus-formation-model" title="Permalink to this heading">#</a></h3>
-<p>The breakdown path model describes eating and bolus formation using:</p>
+<section id="interaction-mechanisms">
+<h3>Interaction Mechanisms<a class="headerlink" href="#interaction-mechanisms" title="Permalink to this heading">#</a></h3>
+<p>Food–saliva interactions alter tribological behavior through:</p>
 <ul class="simple">
-<li><p><strong>Structure parameter</strong> — dimensionless particle area (particle area / initial food area)</p></li>
-<li><p><strong>Lubrication parameter</strong> — friction coefficient representing lubrication status</p></li>
-</ul>
-<p>Food becomes swallowable when it reaches:</p>
-<ul class="simple">
-<li><p>Appropriate particle size</p></li>
-<li><p>Good lubrication status</p></li>
-<li><p>Suitable cohesiveness</p></li>
+<li><p><strong>Surface coating</strong> — protein adsorption changes surface properties</p></li>
+<li><p><strong>Particle clustering</strong> — affects entrainment behavior</p></li>
+<li><p><strong>Colloidal interactions</strong> — bridging, depletion, steric effects</p></li>
+<li><p><strong>Complexation</strong> — protein–polysaccharide interactions</p></li>
+<li><p><strong>Enzymatic activity</strong> — starch breakdown by α-amylase</p></li>
 </ul>
 </section>
-<section id="swallowing-safety">
-<h3>Swallowing Safety<a class="headerlink" href="#swallowing-safety" title="Permalink to this heading">#</a></h3>
-<p>Safe swallowing requires proper bolus properties:</p>
+<section id="oral-emulsification">
+<h3>Oral Emulsification<a class="headerlink" href="#oral-emulsification" title="Permalink to this heading">#</a></h3>
+<p>A significant finding in oral tribology is that saliva can act as an emulsifier:</p>
 <ul class="simple">
-<li><p><strong>Shear viscosity</strong> — controls flow behavior</p></li>
-<li><p><strong>Extensional viscosity</strong> — maintains bolus cohesiveness during pharyngeal transit</p></li>
-<li><p><strong>Cohesiveness</strong> — prevents fracturing and splashing</p></li>
-</ul>
-<p>The International Dysphagia Diet Standardisation Initiative (IDDSI) provides texture grading standards for dysphagia management.</p>
-</section>
-</section>
-<section id="eating-behavior">
-<h2>Eating Behavior<a class="headerlink" href="#eating-behavior" title="Permalink to this heading">#</a></h2>
-<p>Eating behavior research reveals consumer attitudes toward food consumption and health impacts. The way food is eaten affects consumption amount and satisfaction.</p>
-<section id="oral-processing-parameters">
-<h3>Oral Processing Parameters<a class="headerlink" href="#oral-processing-parameters" title="Permalink to this heading">#</a></h3>
-<p>Key behavioral parameters:</p>
-<ul class="simple">
-<li><p>Bite size</p></li>
-<li><p>Chews per bite</p></li>
-<li><p>Eating rate</p></li>
-<li><p>Oral residence time</p></li>
-</ul>
-</section>
-<section id="satiation-and-satiety">
-<h3>Satiation and Satiety<a class="headerlink" href="#satiation-and-satiety" title="Permalink to this heading">#</a></h3>
-<p><strong>Satiation</strong> — process resulting in meal termination, modified by cognitive and sensory processes during oral processing</p>
-<p><strong>Satiety</strong> — suppression of hunger between meals, consequence of post-ingestive and post-absorptive processes</p>
-<p>Longer orosensory exposure (OSE) generally induces:</p>
-<ul class="simple">
-<li><p>Earlier satiation</p></li>
-<li><p>Enhanced subsequent satiety</p></li>
-<li><p>Lower ad libitum food intake</p></li>
-</ul>
-</section>
-<section id="food-design-implications">
-<h3>Food Design Implications<a class="headerlink" href="#food-design-implications" title="Permalink to this heading">#</a></h3>
-<p>Texture modifications affecting eating behavior:</p>
-<ul class="simple">
-<li><p>Harder foods → longer OSE → potential increased satiety</p></li>
-<li><p>Higher viscosity → smaller bite size → lower intake</p></li>
-<li><p>Increased textural complexity → slower eating rate</p></li>
+<li><p>Oil/fat is immediately dispersed when mixed with saliva</p></li>
+<li><p>Individual capability for oral emulsification varies</p></li>
+<li><p>This affects the transition from creaminess to greasiness perception</p></li>
+<li><p>Challenges traditional theories of fat sensation based on bulk lubrication</p></li>
 </ul>
 </section>
 </section>
-<section id="the-fop-wheel">
-<h2>The FOP Wheel<a class="headerlink" href="#the-fop-wheel" title="Permalink to this heading">#</a></h2>
-<p>The FOP research landscape spans multiple interconnected domains:</p>
-<p><strong>Core Areas:</strong></p>
-<ul class="simple">
-<li><p>Food material properties</p></li>
-<li><p>Oral physiology</p></li>
-<li><p>Food sensory perception</p></li>
-<li><p>Eating behavior</p></li>
-<li><p>Brain responses</p></li>
-</ul>
-<p><strong>Disciplinary Approaches:</strong></p>
-<ul class="simple">
-<li><p>Rheology and tribology</p></li>
-<li><p>Fracture mechanics</p></li>
-<li><p>Bolus formation models</p></li>
-<li><p>Swallowing safety assessment</p></li>
-<li><p>Satiety/satiation measurement</p></li>
-</ul>
+<section id="correlating-tribology-with-sensory-perception">
+<h2>Correlating Tribology with Sensory Perception<a class="headerlink" href="#correlating-tribology-with-sensory-perception" title="Permalink to this heading">#</a></h2>
+<section id="frictionsensory-relationships">
+<h3>Friction–Sensory Relationships<a class="headerlink" href="#frictionsensory-relationships" title="Permalink to this heading">#</a></h3>
+<p>Strong correlations have been established between tribological measurements and sensory attributes:</p>
+<p><strong>Slipperiness:</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Slipperiness ∝ 1/μ
+</pre></div>
+</div>
+<p>Lower friction coefficient corresponds to higher perceived slipperiness (R² &gt; 0.99 reported).</p>
+<p><strong>Creaminess:</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Creaminess</span> <span class="o">=</span> <span class="n">f</span><span class="p">(</span><span class="n">μ</span><span class="p">,</span> <span class="n">η</span><span class="p">,</span> <span class="n">droplet</span> <span class="n">size</span><span class="p">,</span> <span class="n">coalescence</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Higher emulsion viscosity with lower friction typically increases creaminess perception, though saliva presence complicates this relationship.</p>
+<p><strong>Astringency:</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Astringency ∝ μ at low sliding speeds
+</pre></div>
+</div>
+<p>Red wine astringency correlates with friction coefficient at ~0.075 mm/s (R² = 0.93).</p>
 </section>
-<section id="future-directions">
-<h2>Future Directions<a class="headerlink" href="#future-directions" title="Permalink to this heading">#</a></h2>
-<section id="research-priorities">
-<h3>Research Priorities<a class="headerlink" href="#research-priorities" title="Permalink to this heading">#</a></h3>
+<section id="limitations-and-challenges">
+<h3>Limitations and Challenges<a class="headerlink" href="#limitations-and-challenges" title="Permalink to this heading">#</a></h3>
+<p>Current obstacles in applying tribology to sensory prediction:</p>
 <ol class="arabic simple">
-<li><p><strong>Saliva research</strong> — physics, physiology, and manipulation of food–saliva interactions; individual and ethnic variation in saliva composition</p></li>
-<li><p><strong>Oral thin film</strong> — functional properties affected by composition, fluid dynamics, mechanical strength, and permeability</p></li>
-<li><p><strong>Oral physiology</strong> — functions of tongue, saliva, oral/orofacial muscles, and sensory receptors</p></li>
-<li><p><strong>Oral physics</strong> — structural changes at multiple length scales; food–saliva interface phenomena; mass transfer at particle and molecule levels</p></li>
+<li><p><strong>Vague attribute definitions</strong> — thin-film texture terms lack precise definition</p></li>
+<li><p><strong>Substrate variability</strong> — no standardized oral-mimicking surfaces</p></li>
+<li><p><strong>Tribometer settings</strong> — varied configurations across studies</p></li>
+<li><p><strong>Saliva complexity</strong> — large inter- and intra-individual variation</p></li>
+<li><p><strong>Tongue topography</strong> — difficult to replicate in vitro</p></li>
 </ol>
 </section>
-<section id="technical-challenges">
-<h3>Technical Challenges<a class="headerlink" href="#technical-challenges" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="advanced-tribological-methods">
+<h2>Advanced Tribological Methods<a class="headerlink" href="#advanced-tribological-methods" title="Permalink to this heading">#</a></h2>
+<section id="dynamic-tribology-protocol-dtp">
+<h3>Dynamic Tribology Protocol (DTP)<a class="headerlink" href="#dynamic-tribology-protocol-dtp" title="Permalink to this heading">#</a></h3>
+<p>Protocol for studying salivary pellicle response to food interactions:</p>
+<ol class="arabic simple">
+<li><p>Form salivary pellicle on substrate</p></li>
+<li><p>Introduce test food/ingredient</p></li>
+<li><p>Monitor friction evolution over time</p></li>
+<li><p>Correlate with sensory perception</p></li>
+</ol>
+</section>
+<section id="in-situ-oral-measurements">
+<h3>In Situ Oral Measurements<a class="headerlink" href="#in-situ-oral-measurements" title="Permalink to this heading">#</a></h3>
+<p>The synchronization of tribometers with oral pressure sensors enables:</p>
 <ul class="simple">
-<li><p>Ethical restrictions on in vivo studies</p></li>
-<li><p>Limited techniques for oral access (noninvasive or invasive)</p></li>
-<li><p>Need for in vitro setups mimicking oral conditions</p></li>
-<li><p>Development of noninvasive oral access technologies</p></li>
+<li><p>Real-time measurement of oral friction</p></li>
+<li><p>Correlation with tongue pressure</p></li>
+<li><p>Recording as function of time or sliding distance</p></li>
+<li><p>Validation against sensory ratings</p></li>
+</ul>
+<figure class="align-default" id="oral-tribometer-setup">
+<img alt="_images/or.png" src="_images/or.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 4 </span><span class="caption-text">Schematic of biomimetic oral tribometer setup with various sensors.</span><a class="headerlink" href="#oral-tribometer-setup" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+<section id="applications">
+<h2>Applications<a class="headerlink" href="#applications" title="Permalink to this heading">#</a></h2>
+<section id="food-product-development">
+<h3>Food Product Development<a class="headerlink" href="#food-product-development" title="Permalink to this heading">#</a></h3>
+<p>Tribological screening for:</p>
+<ul class="simple">
+<li><p>Fat replacement strategies</p></li>
+<li><p>Creaminess optimization in low-fat products</p></li>
+<li><p>Astringency management in beverages</p></li>
+<li><p>Mouthcoating reduction in protein drinks</p></li>
+</ul>
+</section>
+<section id="dysphagia-management">
+<h3>Dysphagia Management<a class="headerlink" href="#dysphagia-management" title="Permalink to this heading">#</a></h3>
+<p>Understanding lubrication for safe swallowing:</p>
+<ul class="simple">
+<li><p>Thickened fluid optimization</p></li>
+<li><p>Bolus cohesiveness assessment</p></li>
+<li><p>Residue prediction</p></li>
+</ul>
+</section>
+<section id="oral-care-products">
+<h3>Oral Care Products<a class="headerlink" href="#oral-care-products" title="Permalink to this heading">#</a></h3>
+<p>Formulation optimization for:</p>
+<ul class="simple">
+<li><p>Toothpaste smoothness</p></li>
+<li><p>Mouthwash feel</p></li>
+<li><p>Denture lubricants</p></li>
 </ul>
 </section>
 </section>
 <section id="summary">
 <h2>Summary<a class="headerlink" href="#summary" title="Permalink to this heading">#</a></h2>
-<p>Food oral processing provides a comprehensive framework for understanding eating and sensory perception by integrating:</p>
+<p>Oral tribology bridges the gap between instrumental measurements and sensory perception of thin-film texture attributes. Key advances include:</p>
 <ul class="simple">
-<li><p>Food physics with oral physiology</p></li>
-<li><p>Instrumental measurements with sensory perception</p></li>
-<li><p>Material properties with human experience</p></li>
+<li><p><strong>Biomimetic tribometer design</strong> — surfaces and conditions mimicking oral cavity</p></li>
+<li><p><strong>Signal analysis methods</strong> — extracting texture information from friction signals</p></li>
+<li><p><strong>Food–saliva interaction understanding</strong> — recognizing saliva’s active role</p></li>
+<li><p><strong>In situ measurement capability</strong> — validating in vitro findings</p></li>
 </ul>
-<p>The field offers new approaches to food design, particularly for:</p>
+<p>Future developments should focus on:</p>
 <ul class="simple">
-<li><p>Texture optimization</p></li>
-<li><p>Flavor enhancement with reduced sugar/salt</p></li>
-<li><p>Foods for special populations (elderly, dysphagia patients)</p></li>
-<li><p>Health-oriented products balancing pleasure and nutrition</p></li>
+<li><p>Standardized substrates and protocols</p></li>
+<li><p>Individual variation modeling</p></li>
+<li><p>Multi-modal sensing integration</p></li>
+<li><p>Real-time texture prediction</p></li>
 </ul>
 </section>
 <section id="references">
 <h2>References<a class="headerlink" href="#references" title="Permalink to this heading">#</a></h2>
 <ol class="arabic simple">
-<li><p>Chen, J. (2009). Food oral processing—A review. <em>Food Hydrocolloids</em>, 23(1), 1–25.</p></li>
 <li><p>Chen, J., &amp; Stokes, J.R. (2012). Rheology and tribology: Two distinctive regimes of food texture sensation. <em>Trends in Food Science &amp; Technology</em>, 25(1), 4–12.</p></li>
+<li><p>Glumac, M., Bosc, V., Menut, P., Ramaioli, M., Restagno, F., Mariot, S., &amp; Mathieu, V. (2023). Signal analysis to study the impact of tongue roughness on oral friction mechanisms with a custom-built tribometer. <em>Biotribology</em>, 35–36, 100257</p></li>
 </ol>
 </section>
 </section>
@@ -750,12 +847,12 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="predictive_modeling.html"
+       href="demo.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Predictive Modeling for Sensory Perception</p>
+        <p class="prev-next-title">2. Demo: Sensory Data Analysis with Python</p>
       </div>
     </a>
 </div>
@@ -774,41 +871,43 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction-to-food-oral-processing">Introduction to Food Oral Processing</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-fop-framework">The FOP Framework</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#key-principles">Key Principles</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction-to-oral-tribology">Introduction to Oral Tribology</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#relevance-to-food-texture">Relevance to Food Texture</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-stribeck-framework">The Stribeck Framework</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#texture-perception">Texture Perception</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cross-disciplinary-interplay">Cross-Disciplinary Interplay</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#texture-attributes">Texture Attributes</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mastication-and-chewing-behavior">Mastication and Chewing Behavior</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fracture-and-rheology">Fracture and Rheology</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#oral-tribology">Oral Tribology</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#biomimetic-tribometer-design">Biomimetic Tribometer Design</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#design-principles">Design Principles</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#custom-built-tribometer-systems">Custom-Built Tribometer Systems</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#flavor-perception">Flavor Perception</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#aroma-release-and-perception">Aroma Release and Perception</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gustatory-perception">Gustatory Perception</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#taste-enhancement-strategies">Taste Enhancement Strategies</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#signal-analysis-for-friction-characterization">Signal Analysis for Friction Characterization</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-stick-slip-phenomenon">The Stick-Slip Phenomenon</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#spectral-analysis-approach">Spectral Analysis Approach</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#signal-processing-pipeline">Signal Processing Pipeline</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tongue-roughness-effects">Tongue Roughness Effects</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bolus-swallowing">Bolus Swallowing</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#swallowing-phases">Swallowing Phases</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bolus-formation-model">Bolus Formation Model</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#swallowing-safety">Swallowing Safety</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#foodsaliva-interactions-in-tribology">Food–Saliva Interactions in Tribology</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#saliva-functions">Saliva Functions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#interaction-mechanisms">Interaction Mechanisms</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#oral-emulsification">Oral Emulsification</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#eating-behavior">Eating Behavior</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#oral-processing-parameters">Oral Processing Parameters</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#satiation-and-satiety">Satiation and Satiety</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#food-design-implications">Food Design Implications</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#correlating-tribology-with-sensory-perception">Correlating Tribology with Sensory Perception</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#frictionsensory-relationships">Friction–Sensory Relationships</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#limitations-and-challenges">Limitations and Challenges</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-fop-wheel">The FOP Wheel</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#future-directions">Future Directions</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#research-priorities">Research Priorities</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#technical-challenges">Technical Challenges</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#advanced-tribological-methods">Advanced Tribological Methods</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dynamic-tribology-protocol-dtp">Dynamic Tribology Protocol (DTP)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#in-situ-oral-measurements">In Situ Oral Measurements</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#applications">Applications</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#food-product-development">Food Product Development</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dysphagia-management">Dysphagia Management</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#oral-care-products">Oral Care Products</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">Summary</a></li>

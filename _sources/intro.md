@@ -26,6 +26,15 @@ Food oral processing is inherently multidisciplinary—spanning food physics, se
 
 Each chapter combines theoretical foundations with executable code, enabling readers to replicate analyses and adapt methods to their own research questions.
 
+Inspired by this E-book:
+
+```{figure} ml.png
+---
+name: machine-learning
+---
+Machine learning and geospatial data science By M.P.
+```
+
 ## Author
 
 **Miodrag Glumac, Ph.D.**  
