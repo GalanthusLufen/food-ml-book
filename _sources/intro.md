@@ -1,6 +1,5 @@
-> # ⚠️ **DEMO VERSION**
-> ## **E-book for Assistant Professor Application – Food Science (Penn State University)**
-> **Author:** Miodrag Glumac, Ph.D.  
+> ⚠️ **DEMO VERSION ⚠️ — E-book for Assistant Professor in Food Oral Processing at Penn State University, U.S.A.**  
+> **Author:** Miodrag Glumac, Ph.D.**  
 > **Purpose:** Demonstration document for evaluation only.
 
 # Introduction
@@ -51,7 +50,8 @@ Dr. Glumac specializes in food oral processing, sensory perception modeling, and
 - [LinkedIn](https://www.linkedin.com/in/miodrag-glumac/)
 - [ResearchGate](https://www.researchgate.net/profile/Miodrag-Glumac)
 - [Twitter](https://twitter.com/glumac_xd)
-- 
+
+
 ## Contents
 
 ```{tableofcontents}
