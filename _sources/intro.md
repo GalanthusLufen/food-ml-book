@@ -1,7 +1,8 @@
-> ⚠️ **DEMONSTRATION VERSION** ⚠️ 
-> E-book for Assistant Professor in Food Oral Processing at Penn State University, U.S.A.**  
-> **Author:** Miodrag Glumac, Ph.D.
+> ⚠️ **DEMONSTRATION VERSION** ⚠️  
+> **E-book for Assistant Professor Position in Food Oral Processing, Penn State University (U.S.A.)**  
+> **Author:** Miodrag Glumac, Ph.D.  
 > **Purpose:** Demonstration document for evaluation only.
+
 
 # Introduction
 
