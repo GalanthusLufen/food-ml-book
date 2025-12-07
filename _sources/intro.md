@@ -27,4 +27,3 @@ CEO & Co-founder, The Origin Institute B.V.
 ## Contents
 
 ```{tableofcontents}
-```
