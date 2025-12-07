@@ -7,9 +7,8 @@ This e-book provides an integrated framework for understanding food oral process
 ```{figure} ga.png
 ---
 name: graphical-abstract
-width: 300px
 ---
-Graphical abstract: From physical measurements to sensory prediction using deep neural networks.
+Graphical abstract: From physical instrumental measurements to sensory prediction using deep neural networks.
 ```
 
 ## About This Book

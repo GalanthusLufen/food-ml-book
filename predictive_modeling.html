@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Predictive Modeling of Food Sensory Attributes &#8212; Food Oral Processing, Sensory Perception &amp; AI</title>
+    <title>Predictive Modeling for Sensory Perception &#8212; Food Oral Processing, Sensory Perception &amp; Artificial Intelligence</title>
   
   
   
@@ -62,12 +62,10 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'predictive_modeling';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Oral Tribology" href="oral_tribology.html" />
+    <link rel="next" title="Food Oral Processing" href="oral_tribology.html" />
     <link rel="prev" title="2. Demo: Sensory Data Analysis with Python" href="demo.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -160,8 +158,8 @@ const thebe_selector_output = ".output, .cell_output"
       
     
     
-    <img src="_static/toi_logo.jpg" class="logo__image only-light" alt="Food Oral Processing, Sensory Perception & AI - Home"/>
-    <script>document.write(`<img src="_static/toi_logo.jpg" class="logo__image only-dark" alt="Food Oral Processing, Sensory Perception & AI - Home"/>`);</script>
+    <img src="_static/toi_logo.jpg" class="logo__image only-light" alt="Food Oral Processing, Sensory Perception & Artificial Intelligence - Home"/>
+    <script>document.write(`<img src="_static/toi_logo.jpg" class="logo__image only-dark" alt="Food Oral Processing, Sensory Perception & Artificial Intelligence - Home"/>`);</script>
   
   
 </a></div>
@@ -375,7 +373,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Predictive Modeling of Food Sensory Attributes</h1>
+    <h1>Predictive Modeling for Sensory Perception</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -385,11 +383,69 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-concepts">Key Concepts</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#workflow">Workflow</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#neural-network-architecture">Neural Network Architecture</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#model-performance">Model Performance</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#applications">Applications</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-challenge-of-sensory-prediction">The Challenge of Sensory Prediction</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-promise-of-ai-ml">The Promise of AI/ML</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#current-gaps">Current Gaps</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#synthetic-data-for-sensory-science">Synthetic Data for Sensory Science</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rationale-for-synthetic-data">Rationale for Synthetic Data</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dataset-engineering-principles">Dataset Engineering Principles</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dataset-structure-for-sensory-prediction">Dataset Structure for Sensory Prediction</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#input-feature-categories">Input Feature Categories</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#output-features-sensory-attributes">Output Features (Sensory Attributes)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#embedding-domain-knowledge">Embedding Domain Knowledge</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#physiological-relationships">Physiological Relationships</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ingredient-effects-on-rheology">Ingredient Effects on Rheology</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#compositionsensory-relationships">Composition–Sensory Relationships</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#neural-network-architecture">Neural Network Architecture</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#multi-layer-perceptron-regressor-mlpr">Multi-Layer Perceptron Regressor (MLPR)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#key-architecture-features">Key Architecture Features</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#model-training">Model Training</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-preprocessing">Data Preprocessing</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#training-configuration">Training Configuration</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#training-loop">Training Loop</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#model-evaluation">Model Evaluation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#performance-metrics">Performance Metrics</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#expected-performance">Expected Performance</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#convergence-behavior">Convergence Behavior</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#predictions-and-inference">Predictions and Inference</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#known-input-validation">Known Input Validation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#transfer-learning-on-novel-inputs">Transfer Learning on Novel Inputs</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#interpretation-of-predictions">Interpretation of Predictions</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sensory-panel-validation">Sensory Panel Validation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fisher-f-ratio-analysis">Fisher F-Ratio Analysis</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#panel-consistency">Panel Consistency</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#applications">Applications</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ingredient-screening">Ingredient Screening</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#formulation-optimization">Formulation Optimization</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#consumer-response-simulation">Consumer Response Simulation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dysphagia-food-design">Dysphagia Food Design</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#limitations-and-future-directions">Limitations and Future Directions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#current-limitations">Current Limitations</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#path-forward">Path Forward</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">Summary</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
 </ul>
             </nav>
@@ -402,121 +458,583 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="predictive-modeling-of-food-sensory-attributes">
-<h1>Predictive Modeling of Food Sensory Attributes<a class="headerlink" href="#predictive-modeling-of-food-sensory-attributes" title="Permalink to this heading">#</a></h1>
-<p>Predictive modeling in food science leverages data-driven approaches to understand, forecast, and optimize sensory perception, texture, and quality attributes. By integrating physical measurements, chemical composition, and sensory scores, these models anticipate how changes in formulation or processing affect the final product.</p>
-<section id="key-concepts">
-<h2>Key Concepts<a class="headerlink" href="#key-concepts" title="Permalink to this heading">#</a></h2>
-<p><strong>Input Features:</strong> Physical properties (viscosity, particle size, fat content), chemical composition, and processing parameters.</p>
-<p><strong>Output Targets:</strong> Sensory scores such as thickness, smoothness, creaminess, grittiness, or overall liking.</p>
-<p><strong>Model Types:</strong></p>
+  <section class="tex2jax_ignore mathjax_ignore" id="predictive-modeling-for-sensory-perception">
+<h1>Predictive Modeling for Sensory Perception<a class="headerlink" href="#predictive-modeling-for-sensory-perception" title="Permalink to this heading">#</a></h1>
+<p>This chapter explores the application of deep learning and synthetic data generation to predict sensory perception attributes in food systems. By integrating rheological, tribological, and physiological parameters, neural network models can learn complex relationships between instrumental measurements and human sensory responses.</p>
+<section id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">#</a></h2>
+<section id="the-challenge-of-sensory-prediction">
+<h3>The Challenge of Sensory Prediction<a class="headerlink" href="#the-challenge-of-sensory-prediction" title="Permalink to this heading">#</a></h3>
+<p>Traditional sensory evaluation faces several limitations:</p>
 <ul class="simple">
-<li><p>Regression models (linear, multiple, polynomial)</p></li>
-<li><p>Machine learning models (Random Forest, XGBoost)</p></li>
-<li><p>Neural networks (MLP, CNN for image-based features)</p></li>
+<li><p><strong>Resource intensive</strong> — trained panels, multiple sessions, statistical replication</p></li>
+<li><p><strong>Time consuming</strong> — weeks to months for comprehensive studies</p></li>
+<li><p><strong>Limited scalability</strong> — difficult to screen many formulations rapidly</p></li>
+<li><p><strong>Variability</strong> — inter- and intra-individual differences complicate interpretation</p></li>
 </ul>
-<p><strong>Evaluation Metrics:</strong></p>
+</section>
+<section id="the-promise-of-ai-ml">
+<h3>The Promise of AI/ML<a class="headerlink" href="#the-promise-of-ai-ml" title="Permalink to this heading">#</a></h3>
+<p>Deep learning offers compelling advantages:</p>
+<ul class="simple">
+<li><p><strong>Pattern recognition</strong> — captures nonlinear relationships in high-dimensional data</p></li>
+<li><p><strong>Transfer learning</strong> — knowledge from one domain applied to related tasks</p></li>
+<li><p><strong>Scalability</strong> — rapid prediction once trained</p></li>
+<li><p><strong>Integration</strong> — combines multiple data types (rheology, tribology, physiology)</p></li>
+</ul>
+</section>
+<section id="current-gaps">
+<h3>Current Gaps<a class="headerlink" href="#current-gaps" title="Permalink to this heading">#</a></h3>
+<p>Despite potential, deep learning remains underutilized in sensory science due to:</p>
+<ol class="arabic simple">
+<li><p><strong>Data scarcity</strong> — small, project-specific datasets</p></li>
+<li><p><strong>Inconsistent protocols</strong> — varied experimental designs across studies</p></li>
+<li><p><strong>Reporting gaps</strong> — incomplete documentation of methods and results</p></li>
+<li><p><strong>Domain complexity</strong> — multifactorial nature of sensory perception</p></li>
+</ol>
+</section>
+</section>
+<section id="synthetic-data-for-sensory-science">
+<h2>Synthetic Data for Sensory Science<a class="headerlink" href="#synthetic-data-for-sensory-science" title="Permalink to this heading">#</a></h2>
+<section id="rationale-for-synthetic-data">
+<h3>Rationale for Synthetic Data<a class="headerlink" href="#rationale-for-synthetic-data" title="Permalink to this heading">#</a></h3>
+<p>When real-world data is scarce, noisy, or expensive, synthetic datasets provide:</p>
+<ul class="simple">
+<li><p><strong>Controlled testbed</strong> for model development and validation</p></li>
+<li><p><strong>Privacy preservation</strong> — no human participant data issues</p></li>
+<li><p><strong>Hypothesis testing</strong> — explore theoretical relationships</p></li>
+<li><p><strong>Benchmarking</strong> — evaluate model architectures before real data collection</p></li>
+</ul>
+</section>
+<section id="dataset-engineering-principles">
+<h3>Dataset Engineering Principles<a class="headerlink" href="#dataset-engineering-principles" title="Permalink to this heading">#</a></h3>
+<p>Effective synthetic datasets should incorporate:</p>
+<p><strong>Literature-informed trends:</strong></p>
+<ul class="simple">
+<li><p>Rheological behavior of food systems</p></li>
+<li><p>Physiological parameters within normal ranges</p></li>
+<li><p>Sensory response patterns consistent with published studies</p></li>
+</ul>
+<p><strong>Probabilistic modeling:</strong></p>
+<ul class="simple">
+<li><p>Realistic variability and noise</p></li>
+<li><p>Correlated variables where expected</p></li>
+<li><p>Session and learning effects</p></li>
+</ul>
+<p><strong>Expert domain knowledge:</strong></p>
+<ul class="simple">
+<li><p>Food composition–texture relationships</p></li>
+<li><p>Oral physiology–perception linkages</p></li>
+<li><p>Ingredient functionality effects</p></li>
+</ul>
+</section>
+</section>
+<section id="dataset-structure-for-sensory-prediction">
+<h2>Dataset Structure for Sensory Prediction<a class="headerlink" href="#dataset-structure-for-sensory-prediction" title="Permalink to this heading">#</a></h2>
+<section id="input-feature-categories">
+<h3>Input Feature Categories<a class="headerlink" href="#input-feature-categories" title="Permalink to this heading">#</a></h3>
+<p>A comprehensive dataset integrates multiple domains:</p>
+<p><strong>1. Participant Metadata</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">-</span> <span class="n">Volunteer_ID</span>
+<span class="o">-</span> <span class="n">Sex</span>  
+<span class="o">-</span> <span class="n">Session</span> <span class="p">(</span><span class="mi">1</span> <span class="ow">or</span> <span class="mi">2</span><span class="p">)</span>
+<span class="o">-</span> <span class="n">Repetition</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="ow">or</span> <span class="mi">3</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><strong>2. Food Model Information</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">-</span> <span class="n">Food_Model</span> <span class="p">(</span><span class="n">e</span><span class="o">.</span><span class="n">g</span><span class="o">.</span><span class="p">,</span> <span class="n">Cucumber</span><span class="p">,</span> <span class="n">Banana</span><span class="p">,</span> <span class="n">Carrot</span><span class="p">)</span>
+<span class="o">-</span> <span class="n">Modification_Type</span> <span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="n">Fungal</span> <span class="n">Polysaccharide</span><span class="p">,</span> <span class="n">Insect</span> <span class="n">Protein</span><span class="p">)</span>
+<span class="o">-</span> <span class="n">Ingredient_Variant</span> <span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">,</span> <span class="ow">or</span> <span class="n">C</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><strong>3. Oral Physiology Parameters</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>- Oral_Cavity_Size (cm³)
+- Tongue_Strength (kPa)
+- FOP_Time (seconds)
+- Saliva_Protein (mg/dL)
+- Saliva_Flow (mL/min)
+</pre></div>
+</div>
+<p><strong>4. Rheological Properties</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>- Shear viscosity at multiple rates (0.01–1000 s⁻¹)
+- Maximum extensional viscosity (mPa·s)
+</pre></div>
+</div>
+<p><strong>5. Tribological Properties</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">-</span> <span class="n">Friction_Coefficient</span>
+</pre></div>
+</div>
+</section>
+<section id="output-features-sensory-attributes">
+<h3>Output Features (Sensory Attributes)<a class="headerlink" href="#output-features-sensory-attributes" title="Permalink to this heading">#</a></h3>
+<p>Target variables for prediction (0–10 intensity scale):</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
-<tr class="row-odd"><th class="head"><p>Metric</p></th>
-<th class="head"><p>Formula</p></th>
-<th class="head"><p>Interpretation</p></th>
+<tr class="row-odd"><th class="head"><p>Attribute</p></th>
+<th class="head"><p>Description</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>MSE</p></td>
-<td><p><span class="math notranslate nohighlight">\(\frac{1}{n}\sum(y_i - \hat{y}_i)^2\)</span></p></td>
-<td><p>Lower is better</p></td>
+<tr class="row-even"><td><p>Flowable</p></td>
+<td><p>Ease of flow in mouth</p></td>
 </tr>
-<tr class="row-odd"><td><p>R²</p></td>
-<td><p><span class="math notranslate nohighlight">\(1 - \frac{SS_{res}}{SS_{tot}}\)</span></p></td>
-<td><p>Closer to 1 is better</p></td>
+<tr class="row-odd"><td><p>Mouthcoating</p></td>
+<td><p>Residual coating sensation</p></td>
 </tr>
-<tr class="row-even"><td><p>MAE</p></td>
-<td><p>$\frac{1}{n}\sum</p></td>
-<td><p>y_i - \hat{y}_i</p></td>
+<tr class="row-even"><td><p>Stringiness</p></td>
+<td><p>Thread-forming behavior</p></td>
+</tr>
+<tr class="row-odd"><td><p>Adhesiveness</p></td>
+<td><p>Sticking to oral surfaces</p></td>
+</tr>
+<tr class="row-even"><td><p>Cohesiveness</p></td>
+<td><p>Internal binding strength</p></td>
+</tr>
+<tr class="row-odd"><td><p>Creaminess</p></td>
+<td><p>Smooth, rich sensation</p></td>
+</tr>
+<tr class="row-even"><td><p>Viscosity</p></td>
+<td><p>Perceived thickness</p></td>
+</tr>
+<tr class="row-odd"><td><p>Graininess</p></td>
+<td><p>Particle sensation</p></td>
+</tr>
+<tr class="row-even"><td><p>Slipperiness</p></td>
+<td><p>Ease of sliding</p></td>
+</tr>
+<tr class="row-odd"><td><p>Ease of Swallowability</p></td>
+<td><p>Swallowing comfort</p></td>
 </tr>
 </tbody>
 </table>
 </div>
 </section>
-<section id="workflow">
-<h2>Workflow<a class="headerlink" href="#workflow" title="Permalink to this heading">#</a></h2>
-<ol class="arabic simple">
-<li><p><strong>Data Collection:</strong> Measure viscosity, friction, particle size, and sensory ratings</p></li>
-<li><p><strong>Data Preprocessing:</strong> Normalize features, handle missing values, encode categorical variables</p></li>
-<li><p><strong>Model Training:</strong> Fit a regression or neural network model using training data</p></li>
-<li><p><strong>Validation:</strong> Evaluate model performance using a separate test set</p></li>
-<li><p><strong>Prediction:</strong> Use the trained model to forecast sensory outcomes for new formulations</p></li>
-<li><p><strong>Interpretation:</strong> Analyze feature importance and correlations to understand key drivers</p></li>
-</ol>
+</section>
+<section id="embedding-domain-knowledge">
+<h2>Embedding Domain Knowledge<a class="headerlink" href="#embedding-domain-knowledge" title="Permalink to this heading">#</a></h2>
+<section id="physiological-relationships">
+<h3>Physiological Relationships<a class="headerlink" href="#physiological-relationships" title="Permalink to this heading">#</a></h3>
+<p><strong>Sex-based trends</strong> (population-level):</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Example physiological parameter distributions</span>
+<span class="k">if</span> <span class="n">sex</span> <span class="o">==</span> <span class="s1">&#39;Female&#39;</span><span class="p">:</span>
+    <span class="n">oral_cavity_size</span> <span class="o">=</span> <span class="n">uniform</span><span class="p">(</span><span class="mi">65</span><span class="p">,</span> <span class="mi">80</span><span class="p">)</span>  <span class="c1"># cm³</span>
+    <span class="n">tongue_strength</span> <span class="o">=</span> <span class="n">uniform</span><span class="p">(</span><span class="mi">50</span><span class="p">,</span> <span class="mi">60</span><span class="p">)</span>    <span class="c1"># kPa</span>
+    <span class="n">saliva_flow</span> <span class="o">=</span> <span class="n">uniform</span><span class="p">(</span><span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.7</span><span class="p">)</span>      <span class="c1"># mL/min</span>
+<span class="k">else</span><span class="p">:</span>  <span class="c1"># Male</span>
+    <span class="n">oral_cavity_size</span> <span class="o">=</span> <span class="n">uniform</span><span class="p">(</span><span class="mi">70</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+    <span class="n">tongue_strength</span> <span class="o">=</span> <span class="n">uniform</span><span class="p">(</span><span class="mi">55</span><span class="p">,</span> <span class="mi">70</span><span class="p">)</span>
+    <span class="n">saliva_flow</span> <span class="o">=</span> <span class="n">uniform</span><span class="p">(</span><span class="mf">0.4</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><strong>Sensory–physiology correlations:</strong></p>
+<ul class="simple">
+<li><p>Higher saliva flow → increased flowability ratings</p></li>
+<li><p>Lower saliva protein → increased adhesiveness perception</p></li>
+<li><p>Smaller oral cavity → higher perceived viscosity</p></li>
+<li><p>Longer FOP time → enhanced mouthcoating</p></li>
+</ul>
+</section>
+<section id="ingredient-effects-on-rheology">
+<h3>Ingredient Effects on Rheology<a class="headerlink" href="#ingredient-effects-on-rheology" title="Permalink to this heading">#</a></h3>
+<p><strong>Fungal polysaccharides:</strong></p>
+<ul class="simple">
+<li><p>Reduce shear viscosity (60–70%)</p></li>
+<li><p>Increase extensional viscosity (25–75%)</p></li>
+<li><p>Progressive effect: FPA &lt; FPB &lt; FPC</p></li>
+</ul>
+<p><strong>Insect proteins:</strong></p>
+<ul class="simple">
+<li><p>Increase shear viscosity (10–30%)</p></li>
+<li><p>Modest extensional viscosity increase (5–15%)</p></li>
+<li><p>Bulking effect: IPA &lt; IPB &lt; IPC</p></li>
+</ul>
+</section>
+<section id="compositionsensory-relationships">
+<h3>Composition–Sensory Relationships<a class="headerlink" href="#compositionsensory-relationships" title="Permalink to this heading">#</a></h3>
+<p>Food composition influences sensory ratings:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Conceptual relationships</span>
+<span class="n">flowability</span> <span class="o">=</span> <span class="n">f</span><span class="p">(</span><span class="n">water_content</span><span class="p">)</span>  <span class="c1"># Higher water → more flowable</span>
+<span class="n">mouthcoating</span> <span class="o">=</span> <span class="n">f</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="n">water_content</span><span class="p">,</span> <span class="n">viscosity</span><span class="p">)</span>
+<span class="n">adhesiveness</span> <span class="o">=</span> <span class="n">f</span><span class="p">(</span><span class="n">sugar_content</span><span class="p">,</span> <span class="n">viscosity</span><span class="p">)</span>
+<span class="n">graininess</span> <span class="o">=</span> <span class="n">f</span><span class="p">(</span><span class="n">fiber_content</span><span class="p">)</span>
+<span class="n">slipperiness</span> <span class="o">=</span> <span class="n">f</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="n">friction_coefficient</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
 </section>
 <section id="neural-network-architecture">
 <h2>Neural Network Architecture<a class="headerlink" href="#neural-network-architecture" title="Permalink to this heading">#</a></h2>
-<p>Deep neural networks can map physical parameters directly to sensory scores:</p>
-<div class="pst-scrollable-table-container"><table class="table">
-<thead>
-<tr class="row-odd"><th class="head"><p>Input Features</p></th>
-<th class="head"><p>Output</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>Viscosity</p></td>
-<td><p>Thickness perception</p></td>
-</tr>
-<tr class="row-odd"><td><p>Particle size</p></td>
-<td><p>Grittiness</p></td>
-</tr>
-<tr class="row-even"><td><p>Fat content</p></td>
-<td><p>Creaminess</p></td>
-</tr>
-<tr class="row-odd"><td><p>Friction coefficient</p></td>
-<td><p>Smoothness</p></td>
-</tr>
-</tbody>
-</table>
+<section id="multi-layer-perceptron-regressor-mlpr">
+<h3>Multi-Layer Perceptron Regressor (MLPR)<a class="headerlink" href="#multi-layer-perceptron-regressor-mlpr" title="Permalink to this heading">#</a></h3>
+<p>Architecture for sensory prediction:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Input Layer (64 features after encoding)
+    │
+    ▼
+Hidden Layer 1 (256 neurons)
+    ├── Fully Connected
+    ├── Batch Normalization  
+    ├── ReLU Activation
+    ├── Dropout (0.2)
+    └── Skip Connection
+    │
+    ▼
+Hidden Layer 2 (128 neurons)
+    ├── Fully Connected
+    ├── Batch Normalization
+    ├── ReLU Activation
+    ├── Dropout (0.2)
+    └── Skip Connection
+    │
+    ▼
+Hidden Layer 3 (64 neurons)
+    ├── Fully Connected
+    ├── Batch Normalization
+    ├── ReLU Activation
+    ├── Dropout (0.1)
+    └── Skip Connection
+    │
+    ▼
+Hidden Layer 4 (32 neurons)
+    ├── Fully Connected
+    ├── Batch Normalization
+    ├── ReLU Activation
+    ├── Dropout (0.1)
+    └── Skip Connection
+    │
+    ▼
+Output Layer (10 sensory attributes)
+    └── Sigmoid Activation
+</pre></div>
 </div>
-<p>The mapping function learned by the network:</p>
-<div class="math notranslate nohighlight">
-\[
-\hat{y}_{\text{sensory}} = f_\theta(\mathbf{x}_{\text{physical}})
-\]</div>
-<p>Where <span class="math notranslate nohighlight">\(\theta\)</span> represents the learned network parameters.</p>
 </section>
-<section id="model-performance">
-<h2>Model Performance<a class="headerlink" href="#model-performance" title="Permalink to this heading">#</a></h2>
-<p>Based on recent work with texture-modified plant-based smoothies:</p>
+<section id="key-architecture-features">
+<h3>Key Architecture Features<a class="headerlink" href="#key-architecture-features" title="Permalink to this heading">#</a></h3>
+<p><strong>Skip connections:</strong></p>
+<ul class="simple">
+<li><p>Link input directly to each hidden layer</p></li>
+<li><p>Enhance gradient flow during training</p></li>
+<li><p>Reduce vanishing gradient problem</p></li>
+<li><p>Enable learning of both direct and transformed features</p></li>
+</ul>
+<p><strong>Batch normalization:</strong></p>
+<ul class="simple">
+<li><p>Stabilizes training</p></li>
+<li><p>Allows higher learning rates</p></li>
+<li><p>Provides regularization effect</p></li>
+</ul>
+<p><strong>Dropout regularization:</strong></p>
+<ul class="simple">
+<li><p>Prevents overfitting</p></li>
+<li><p>Higher rate (0.2) in early layers</p></li>
+<li><p>Lower rate (0.1) in later layers</p></li>
+</ul>
+</section>
+</section>
+<section id="model-training">
+<h2>Model Training<a class="headerlink" href="#model-training" title="Permalink to this heading">#</a></h2>
+<section id="data-preprocessing">
+<h3>Data Preprocessing<a class="headerlink" href="#data-preprocessing" title="Permalink to this heading">#</a></h3>
+<p><strong>One-Hot Encoding</strong> for categorical variables:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Transform categorical to binary indicators</span>
+<span class="n">categorical_columns</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s1">&#39;Sex&#39;</span><span class="p">,</span> <span class="s1">&#39;Session&#39;</span><span class="p">,</span> <span class="s1">&#39;Food_Model&#39;</span><span class="p">,</span> 
+    <span class="s1">&#39;Modification_Type&#39;</span><span class="p">,</span> <span class="s1">&#39;Ingredient_Variant&#39;</span>
+<span class="p">]</span>
+<span class="c1"># Results in expanded feature space</span>
+<span class="c1"># Original: 48 columns → Encoded: 74 columns</span>
+</pre></div>
+</div>
+<p><strong>Feature Scaling:</strong></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.preprocessing</span><span class="w"> </span><span class="kn">import</span> <span class="n">MinMaxScaler</span>
+
+<span class="n">scaler</span> <span class="o">=</span> <span class="n">MinMaxScaler</span><span class="p">()</span>  <span class="c1"># Scale to [0, 1]</span>
+<span class="n">X_scaled</span> <span class="o">=</span> <span class="n">scaler</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="training-configuration">
+<h3>Training Configuration<a class="headerlink" href="#training-configuration" title="Permalink to this heading">#</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Hyperparameters</span>
+<span class="n">config</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;loss_function&#39;</span><span class="p">:</span> <span class="s1">&#39;MSELoss&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;optimizer&#39;</span><span class="p">:</span> <span class="s1">&#39;AdamW&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;learning_rate&#39;</span><span class="p">:</span> <span class="mf">0.0001</span><span class="p">,</span>
+    <span class="s1">&#39;weight_decay&#39;</span><span class="p">:</span> <span class="mf">0.0005</span><span class="p">,</span>
+    <span class="s1">&#39;batch_size&#39;</span><span class="p">:</span> <span class="mi">128</span><span class="p">,</span>
+    <span class="s1">&#39;epochs&#39;</span><span class="p">:</span> <span class="mi">50</span><span class="p">,</span>
+    <span class="s1">&#39;train_split&#39;</span><span class="p">:</span> <span class="mf">0.80</span><span class="p">,</span>
+    <span class="s1">&#39;val_split&#39;</span><span class="p">:</span> <span class="mf">0.10</span><span class="p">,</span>
+    <span class="s1">&#39;test_split&#39;</span><span class="p">:</span> <span class="mf">0.10</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</section>
+<section id="training-loop">
+<h3>Training Loop<a class="headerlink" href="#training-loop" title="Permalink to this heading">#</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">torch</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">torch.nn</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">nn</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">train_epoch</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">dataloader</span><span class="p">,</span> <span class="n">optimizer</span><span class="p">,</span> <span class="n">criterion</span><span class="p">):</span>
+    <span class="n">model</span><span class="o">.</span><span class="n">train</span><span class="p">()</span>
+    <span class="n">total_loss</span> <span class="o">=</span> <span class="mi">0</span>
+    
+    <span class="k">for</span> <span class="n">batch_X</span><span class="p">,</span> <span class="n">batch_y</span> <span class="ow">in</span> <span class="n">dataloader</span><span class="p">:</span>
+        <span class="n">optimizer</span><span class="o">.</span><span class="n">zero_grad</span><span class="p">()</span>
+        <span class="n">predictions</span> <span class="o">=</span> <span class="n">model</span><span class="p">(</span><span class="n">batch_X</span><span class="p">)</span>
+        <span class="n">loss</span> <span class="o">=</span> <span class="n">criterion</span><span class="p">(</span><span class="n">predictions</span><span class="p">,</span> <span class="n">batch_y</span><span class="p">)</span>
+        <span class="n">loss</span><span class="o">.</span><span class="n">backward</span><span class="p">()</span>
+        <span class="n">optimizer</span><span class="o">.</span><span class="n">step</span><span class="p">()</span>
+        <span class="n">total_loss</span> <span class="o">+=</span> <span class="n">loss</span><span class="o">.</span><span class="n">item</span><span class="p">()</span>
+    
+    <span class="k">return</span> <span class="n">total_loss</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">dataloader</span><span class="p">)</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">validate</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">dataloader</span><span class="p">,</span> <span class="n">criterion</span><span class="p">):</span>
+    <span class="n">model</span><span class="o">.</span><span class="n">eval</span><span class="p">()</span>
+    <span class="n">total_loss</span> <span class="o">=</span> <span class="mi">0</span>
+    
+    <span class="k">with</span> <span class="n">torch</span><span class="o">.</span><span class="n">no_grad</span><span class="p">():</span>
+        <span class="k">for</span> <span class="n">batch_X</span><span class="p">,</span> <span class="n">batch_y</span> <span class="ow">in</span> <span class="n">dataloader</span><span class="p">:</span>
+            <span class="n">predictions</span> <span class="o">=</span> <span class="n">model</span><span class="p">(</span><span class="n">batch_X</span><span class="p">)</span>
+            <span class="n">loss</span> <span class="o">=</span> <span class="n">criterion</span><span class="p">(</span><span class="n">predictions</span><span class="p">,</span> <span class="n">batch_y</span><span class="p">)</span>
+            <span class="n">total_loss</span> <span class="o">+=</span> <span class="n">loss</span><span class="o">.</span><span class="n">item</span><span class="p">()</span>
+    
+    <span class="k">return</span> <span class="n">total_loss</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">dataloader</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="model-evaluation">
+<h2>Model Evaluation<a class="headerlink" href="#model-evaluation" title="Permalink to this heading">#</a></h2>
+<section id="performance-metrics">
+<h3>Performance Metrics<a class="headerlink" href="#performance-metrics" title="Permalink to this heading">#</a></h3>
+<p><strong>Mean Squared Error (MSE):</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>MSE = (1/n) Σ(y_true - y_pred)²
+</pre></div>
+</div>
+<p><strong>Coefficient of Determination (R²):</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>R² = 1 - (SS_res / SS_tot)
+</pre></div>
+</div>
+</section>
+<section id="expected-performance">
+<h3>Expected Performance<a class="headerlink" href="#expected-performance" title="Permalink to this heading">#</a></h3>
+<p>For well-trained models on comprehensive datasets:</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Metric</p></th>
-<th class="head"><p>Value</p></th>
+<th class="head"><p>Training</p></th>
+<th class="head"><p>Validation</p></th>
+<th class="head"><p>Test</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="row-even"><td><p>MSE</p></td>
+<td><p>&lt; 0.05</p></td>
+<td><p>&lt; 0.10</p></td>
 <td><p>&lt; 0.13</p></td>
 </tr>
-<tr class="row-odd"><td><p>Test R²</p></td>
-<td><p>0.91</p></td>
+<tr class="row-odd"><td><p>R²</p></td>
+<td><p>&gt; 0.95</p></td>
+<td><p>&gt; 0.92</p></td>
+<td><p>&gt; 0.91</p></td>
 </tr>
 </tbody>
 </table>
 </div>
-<p>These results demonstrate the potential for synthetic data augmentation in sensory science, addressing the common challenge of limited training data in sensory studies.</p>
+</section>
+<section id="convergence-behavior">
+<h3>Convergence Behavior<a class="headerlink" href="#convergence-behavior" title="Permalink to this heading">#</a></h3>
+<p>Training typically shows:</p>
+<ul class="simple">
+<li><p>Rapid loss decrease in first 10 epochs</p></li>
+<li><p>Plateau reached around epoch 20</p></li>
+<li><p>Minimal improvement thereafter</p></li>
+<li><p>Training, validation, and test curves should converge similarly</p></li>
+</ul>
+</section>
+</section>
+<section id="predictions-and-inference">
+<h2>Predictions and Inference<a class="headerlink" href="#predictions-and-inference" title="Permalink to this heading">#</a></h2>
+<section id="known-input-validation">
+<h3>Known Input Validation<a class="headerlink" href="#known-input-validation" title="Permalink to this heading">#</a></h3>
+<p>Test model on data from training distribution:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">model</span><span class="o">.</span><span class="n">eval</span><span class="p">()</span>
+<span class="k">with</span> <span class="n">torch</span><span class="o">.</span><span class="n">no_grad</span><span class="p">():</span>
+    <span class="c1"># Extract known sample</span>
+    <span class="n">sample_input</span> <span class="o">=</span> <span class="n">X_test</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">1</span><span class="p">]</span>
+    <span class="n">true_values</span> <span class="o">=</span> <span class="n">y_test</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    
+    <span class="c1"># Generate prediction</span>
+    <span class="n">predicted</span> <span class="o">=</span> <span class="n">model</span><span class="p">(</span><span class="n">sample_input</span><span class="p">)</span>
+    
+    <span class="c1"># Calculate error</span>
+    <span class="n">mse</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">mean</span><span class="p">((</span><span class="n">predicted</span> <span class="o">-</span> <span class="n">true_values</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Expected: MSE &lt; 0.13 for individual samples</p>
+</section>
+<section id="transfer-learning-on-novel-inputs">
+<h3>Transfer Learning on Novel Inputs<a class="headerlink" href="#transfer-learning-on-novel-inputs" title="Permalink to this heading">#</a></h3>
+<p>Test generalization to unseen conditions:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Create novel input scenario</span>
+<span class="n">novel_input</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;Food_Model&#39;</span><span class="p">:</span> <span class="s1">&#39;Celery&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;Sex&#39;</span><span class="p">:</span> <span class="s1">&#39;Female&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;Tongue_Strength&#39;</span><span class="p">:</span> <span class="mi">50</span><span class="p">,</span>  <span class="c1"># kPa</span>
+    <span class="s1">&#39;Viscosity_Profile&#39;</span><span class="p">:</span> <span class="s1">&#39;Newtonian_100mPas&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;Modification&#39;</span><span class="p">:</span> <span class="s1">&#39;None&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;Extensional_Viscosity&#39;</span><span class="p">:</span> <span class="mi">1000</span><span class="p">,</span>
+    <span class="s1">&#39;Friction_Coefficient&#39;</span><span class="p">:</span> <span class="mf">0.25</span>
+<span class="p">}</span>
+
+<span class="c1"># Model predicts sensory ratings</span>
+<span class="c1"># Even for combinations not in training data</span>
+</pre></div>
+</div>
+</section>
+<section id="interpretation-of-predictions">
+<h3>Interpretation of Predictions<a class="headerlink" href="#interpretation-of-predictions" title="Permalink to this heading">#</a></h3>
+<p>The trained model captures:</p>
+<ol class="arabic simple">
+<li><p><strong>Ingredient effects</strong> — FP reduces perceived viscosity, IP increases it</p></li>
+<li><p><strong>Rheology–sensory links</strong> — shear-thinning affects flowability</p></li>
+<li><p><strong>Physiological modulation</strong> — tongue strength impacts swallowability</p></li>
+<li><p><strong>Food matrix interactions</strong> — base food type influences all attributes</p></li>
+</ol>
+</section>
+</section>
+<section id="sensory-panel-validation">
+<h2>Sensory Panel Validation<a class="headerlink" href="#sensory-panel-validation" title="Permalink to this heading">#</a></h2>
+<section id="fisher-f-ratio-analysis">
+<h3>Fisher F-Ratio Analysis<a class="headerlink" href="#fisher-f-ratio-analysis" title="Permalink to this heading">#</a></h3>
+<p>Assess synthetic panel discrimination:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># ANOVA approach</span>
+<span class="n">F_ratio</span> <span class="o">=</span> <span class="n">MS_between</span> <span class="o">/</span> <span class="n">MS_within</span>
+
+<span class="c1"># MS_between: variance due to sample differences</span>
+<span class="c1"># MS_within: random error / intra-panelist variability</span>
+</pre></div>
+</div>
+<p><strong>Interpretation:</strong></p>
+<ul class="simple">
+<li><p>F &gt; 2: Significant discrimination (p &lt; 0.05)</p></li>
+<li><p>F &gt; 5: Strong discrimination (p &lt; 0.001)</p></li>
+<li><p>F &gt; 100: Excellent discrimination</p></li>
+</ul>
+</section>
+<section id="panel-consistency">
+<h3>Panel Consistency<a class="headerlink" href="#panel-consistency" title="Permalink to this heading">#</a></h3>
+<p>Low within-group variance indicates:</p>
+<ul class="simple">
+<li><p>Reliable scoring across sessions</p></li>
+<li><p>Consistent panelist behavior</p></li>
+<li><p>Reproducible results</p></li>
+</ul>
+</section>
 </section>
 <section id="applications">
 <h2>Applications<a class="headerlink" href="#applications" title="Permalink to this heading">#</a></h2>
+<section id="ingredient-screening">
+<h3>Ingredient Screening<a class="headerlink" href="#ingredient-screening" title="Permalink to this heading">#</a></h3>
+<p>Rapid evaluation of novel ingredients:</p>
+<ol class="arabic simple">
+<li><p>Input ingredient rheological profile</p></li>
+<li><p>Predict sensory impact across attributes</p></li>
+<li><p>Prioritize candidates for physical testing</p></li>
+<li><p>Reduce experimental burden</p></li>
+</ol>
+</section>
+<section id="formulation-optimization">
+<h3>Formulation Optimization<a class="headerlink" href="#formulation-optimization" title="Permalink to this heading">#</a></h3>
+<p>Iterative improvement:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">While</span> <span class="n">sensory_target</span> <span class="ow">not</span> <span class="n">met</span><span class="p">:</span>
+    <span class="n">Adjust</span> <span class="n">formulation</span> <span class="n">parameters</span>
+    <span class="n">Predict</span> <span class="n">sensory</span> <span class="n">profile</span>
+    <span class="n">Evaluate</span> <span class="n">against</span> <span class="n">targets</span>
+    <span class="n">Refine</span> <span class="n">parameters</span>
+</pre></div>
+</div>
+</section>
+<section id="consumer-response-simulation">
+<h3>Consumer Response Simulation<a class="headerlink" href="#consumer-response-simulation" title="Permalink to this heading">#</a></h3>
+<p>Model different consumer segments:</p>
 <ul class="simple">
-<li><p>Optimizing texture and mouthfeel in plant-based products</p></li>
-<li><p>Predicting consumer liking for new recipes</p></li>
-<li><p>Reducing trial-and-error in product development by simulating formulation changes</p></li>
-<li><p>Accelerating reformulation for healthier alternatives</p></li>
+<li><p>Age-related physiological variation</p></li>
+<li><p>Sex-based differences</p></li>
+<li><p>Cultural/regional preferences</p></li>
+</ul>
+</section>
+<section id="dysphagia-food-design">
+<h3>Dysphagia Food Design<a class="headerlink" href="#dysphagia-food-design" title="Permalink to this heading">#</a></h3>
+<p>Predict safe-swallowing attributes:</p>
+<ul class="simple">
+<li><p>Ease of swallowability scores</p></li>
+<li><p>Cohesiveness requirements</p></li>
+<li><p>Optimal viscosity ranges</p></li>
+</ul>
+</section>
+</section>
+<section id="limitations-and-future-directions">
+<h2>Limitations and Future Directions<a class="headerlink" href="#limitations-and-future-directions" title="Permalink to this heading">#</a></h2>
+<section id="current-limitations">
+<h3>Current Limitations<a class="headerlink" href="#current-limitations" title="Permalink to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p><strong>Synthetic data basis</strong> — requires validation with real experiments</p></li>
+<li><p><strong>Hidden biases</strong> — imposed probabilistic rules may not reflect reality</p></li>
+<li><p><strong>Generalization uncertainty</strong> — cross-dataset performance unknown</p></li>
+<li><p><strong>Mechanistic opacity</strong> — neural networks as black boxes</p></li>
+</ol>
+</section>
+<section id="path-forward">
+<h3>Path Forward<a class="headerlink" href="#path-forward" title="Permalink to this heading">#</a></h3>
+<p><strong>Experimental validation:</strong></p>
+<ul class="simple">
+<li><p>Collect real sensory data with matched instrumental measurements</p></li>
+<li><p>Compare model predictions to actual panel ratings</p></li>
+<li><p>Refine synthetic data generation rules</p></li>
+</ul>
+<p><strong>Transfer learning:</strong></p>
+<ul class="simple">
+<li><p>Pre-train on synthetic data</p></li>
+<li><p>Fine-tune on limited real data</p></li>
+<li><p>Evaluate domain adaptation strategies</p></li>
+</ul>
+<p><strong>Model interpretability:</strong></p>
+<ul class="simple">
+<li><p>SHAP values for feature importance</p></li>
+<li><p>Attention mechanisms for transparency</p></li>
+<li><p>Partial dependence plots</p></li>
+</ul>
+<p><strong>Integration opportunities:</strong></p>
+<ul class="simple">
+<li><p>Combine with chemometrics (taste, aroma)</p></li>
+<li><p>Include visual attributes</p></li>
+<li><p>Link to consumer liking models</p></li>
+</ul>
+</section>
+</section>
+<section id="summary">
+<h2>Summary<a class="headerlink" href="#summary" title="Permalink to this heading">#</a></h2>
+<p>Deep learning offers a powerful framework for predicting sensory perception from instrumental and physiological data. Key contributions of this approach include:</p>
+<ol class="arabic simple">
+<li><p><strong>Synthetic data methodology</strong> — literature-informed dataset construction</p></li>
+<li><p><strong>Multi-modal integration</strong> — rheology, tribology, physiology, sensory</p></li>
+<li><p><strong>Neural network architecture</strong> — MLPR with skip connections for regression</p></li>
+<li><p><strong>Transfer learning potential</strong> — generalization to novel conditions</p></li>
+</ol>
+<p>This framework provides a proof-of-concept for accelerating food product development through:</p>
+<ul class="simple">
+<li><p>Rapid ingredient screening</p></li>
+<li><p>Virtual prototyping</p></li>
+<li><p>Consumer response simulation</p></li>
+<li><p>Reduced experimental burden</p></li>
 </ul>
 </section>
 <section id="references">
 <h2>References<a class="headerlink" href="#references" title="Permalink to this heading">#</a></h2>
 <ol class="arabic simple">
-<li><p>Glumac, M. et al. (2025). Synthetic data and neural networks for sensory prediction. <em>Food Hydrocolloids</em>.</p></li>
+<li><p>Chen, J. (2020). It is important to differentiate sensory property from the material property. <em>Trends in Food Science &amp; Technology</em>, 96, 268–270.</p></li>
+<li><p>Glumac, M., Avila-Sierra, A., &amp; Mishyna, M. (2026). Synthetic data and deep neural networks enable prediction of sensory perception attributes in texture-modified plant-based smoothies. <em>Food Hydrocolloids</em>, 174, 112324.</p></li>
 </ol>
 </section>
 </section>
@@ -565,7 +1083,7 @@ document.write(`
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Oral Tribology</p>
+        <p class="prev-next-title">Food Oral Processing</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -585,11 +1103,69 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-concepts">Key Concepts</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#workflow">Workflow</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#neural-network-architecture">Neural Network Architecture</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#model-performance">Model Performance</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#applications">Applications</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-challenge-of-sensory-prediction">The Challenge of Sensory Prediction</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-promise-of-ai-ml">The Promise of AI/ML</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#current-gaps">Current Gaps</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#synthetic-data-for-sensory-science">Synthetic Data for Sensory Science</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rationale-for-synthetic-data">Rationale for Synthetic Data</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dataset-engineering-principles">Dataset Engineering Principles</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dataset-structure-for-sensory-prediction">Dataset Structure for Sensory Prediction</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#input-feature-categories">Input Feature Categories</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#output-features-sensory-attributes">Output Features (Sensory Attributes)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#embedding-domain-knowledge">Embedding Domain Knowledge</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#physiological-relationships">Physiological Relationships</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ingredient-effects-on-rheology">Ingredient Effects on Rheology</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#compositionsensory-relationships">Composition–Sensory Relationships</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#neural-network-architecture">Neural Network Architecture</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#multi-layer-perceptron-regressor-mlpr">Multi-Layer Perceptron Regressor (MLPR)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#key-architecture-features">Key Architecture Features</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#model-training">Model Training</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-preprocessing">Data Preprocessing</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#training-configuration">Training Configuration</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#training-loop">Training Loop</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#model-evaluation">Model Evaluation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#performance-metrics">Performance Metrics</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#expected-performance">Expected Performance</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#convergence-behavior">Convergence Behavior</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#predictions-and-inference">Predictions and Inference</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#known-input-validation">Known Input Validation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#transfer-learning-on-novel-inputs">Transfer Learning on Novel Inputs</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#interpretation-of-predictions">Interpretation of Predictions</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sensory-panel-validation">Sensory Panel Validation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fisher-f-ratio-analysis">Fisher F-Ratio Analysis</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#panel-consistency">Panel Consistency</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#applications">Applications</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ingredient-screening">Ingredient Screening</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#formulation-optimization">Formulation Optimization</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#consumer-response-simulation">Consumer Response Simulation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dysphagia-food-design">Dysphagia Food Design</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#limitations-and-future-directions">Limitations and Future Directions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#current-limitations">Current Limitations</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#path-forward">Path Forward</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">Summary</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
 </ul>
   </nav></div>
