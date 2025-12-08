@@ -1,5 +1,5 @@
->                           ⚠️ **DEMONSTRATION VERSION** ⚠️  
-> **E-book made asa  demo for Assistant Professor Position in Food Oral Processing, Penn State University (U.S.A.)**  
+> ⚠️ **DEMONSTRATION VERSION** ⚠️  
+> **E-book made as a demo for Assistant Professor Position in Food Oral Processing, Penn State University (U.S.A.)**  
 > **Author:** Miodrag Glumac, Ph.D.  
 > **Purpose:** Demonstration document.
 
