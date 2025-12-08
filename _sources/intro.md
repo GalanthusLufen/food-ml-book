@@ -1,7 +1,7 @@
-> ⚠️ **DEMONSTRATION VERSION** ⚠️  
-> **E-book for Assistant Professor Position in Food Oral Processing, Penn State University (U.S.A.)**  
+>                           ⚠️ **DEMONSTRATION VERSION** ⚠️  
+> **E-book made asa  demo for Assistant Professor Position in Food Oral Processing, Penn State University (U.S.A.)**  
 > **Author:** Miodrag Glumac, Ph.D.  
-> **Purpose:** Demonstration document for evaluation only.
+> **Purpose:** Demonstration document.
 
 
 # Introduction
@@ -24,10 +24,10 @@ Food oral processing is inherently multidisciplinary—spanning food physics, se
 **Core topics covered:**
 
 - Fundamentals of food oral processing and bolus formation
-- Oral tribology and the Stribeck framework
 - Rheological characterization relevant to texture perception
 - Neural network approaches for sensory attribute prediction
 - Synthetic data generation for augmenting small sensory datasets
+- Oral tribology and the Stribeck framework
 - Computer vision applications in eating behavior analysis
 
 Each chapter combines theoretical foundations with executable code, enabling readers to replicate analyses and adapt methods to their own research questions.
@@ -44,7 +44,6 @@ Machine learning and geospatial data science By M.P.
 ## Author
 
 **Miodrag Glumac, Ph.D.**  
-CEO & Co-founder, The Origin Institute B.V.
 
 Dr. Glumac specializes in food oral processing, sensory perception modeling, and the application of machine learning to food texture analysis. His research focuses on biomimetic tribometry, computer vision for eating behavior, and predictive modeling of sensory attributes.
 
