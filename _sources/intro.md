@@ -13,7 +13,7 @@
 
 This e-book provides an integrated framework for understanding food oral processing through the lens of modern data science and artificial intelligence. It is designed for undergraduate and graduate students, researchers, and industry professionals seeking to bridge physical measurements with sensory perception.
 
-## About This Book
+## **About This Book**
 
 Food oral processing is inherently multidisciplinary—spanning food physics, sensory science, physiology, and increasingly, computational modeling. This book integrates these domains through hands-on Python workflows and real research applications.
 
