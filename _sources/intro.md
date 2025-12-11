@@ -25,7 +25,6 @@ name: graphical-abstract
 Graphical abstract: From physical instrumental measurements to sensory prediction using deep neural networks.
 ```
 
-
 **Core topics covered:**
 
 - Fundamentals of food oral processing and bolus formation

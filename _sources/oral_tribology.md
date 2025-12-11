@@ -77,6 +77,13 @@ Several approaches have been developed for oral tribology:
 - First measurements of oral lubrication in vivo
 - Pressure sensor used as probe for normal load detection
 
+```{figure} trb.png
+---
+name: custom-tribometer
+---
+Custom-built oral tribometer with hard palate and soft artificial tongue.
+```
+
 ## Signal Analysis for Friction Characterization
 
 ### The Stick-Slip Phenomenon
@@ -156,6 +163,16 @@ def analyze_friction_signal(friction_data, sampling_rate):
     }
 ```
 
+### Tongue 3D printing tehniques
+
+```{figure} 3d.png
+---
+name: 3d-tongue
+---
+3D printing of moulds used for soft artificial tongues.
+```
+
+
 ### Tongue Roughness Effects
 
 The tongue surface exhibits complex topography with different papillae types:
@@ -172,6 +189,13 @@ Individual tongue roughness significantly affects:
 - Stick-slip frequency
 - Lubrication regime transitions
 - Sensory perception intensity
+
+```{figure} t1.png
+---
+name: custom-tongue
+---
+Soft artificial tongue made with PVA cryio-polymer.
+```
 
 ## Food–Saliva Interactions in Tribology
 

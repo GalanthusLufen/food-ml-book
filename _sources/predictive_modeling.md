@@ -13,6 +13,13 @@ Traditional sensory evaluation faces several limitations:
 - **Limited scalability** — difficult to screen many formulations rapidly
 - **Variability** — inter- and intra-individual differences complicate interpretation
 
+```{figure} sensory.png
+---
+name: sensory-booths
+---
+Sensory perception experiments require exntesive preparation and are human and labour intensive.
+```
+
 ### The Promise of AI/ML
 
 Deep learning offers compelling advantages:
