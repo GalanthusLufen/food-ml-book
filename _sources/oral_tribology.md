@@ -25,6 +25,8 @@ The Stribeck curve describes friction behavior across different lubrication regi
 ```{figure} sc.png
 ---
 name: striback-curve
+width: 80%
+align: center
 ---
 Stribeck curve with three lubrication regimes: boundary, mixed and hydrodynamic.
 ```
@@ -80,6 +82,8 @@ Several approaches have been developed for oral tribology:
 ```{figure} trb.png
 ---
 name: custom-tribometer
+width: 80%
+align: center
 ---
 Custom-built oral tribometer with hard palate and soft artificial tongue.
 ```
@@ -168,6 +172,8 @@ def analyze_friction_signal(friction_data, sampling_rate):
 ```{figure} 3d.png
 ---
 name: 3d-tongue
+width: 80%
+align: center
 ---
 3D printing of moulds used for soft artificial tongues.
 ```
@@ -193,6 +199,8 @@ Individual tongue roughness significantly affects:
 ```{figure} t1.png
 ---
 name: custom-tongue
+width: 80%
+align: center
 ---
 Soft artificial tongue made with PVA cryio-polymer.
 ```
@@ -284,6 +292,8 @@ The synchronization of tribometers with oral pressure sensors enables:
 ```{figure} or.png
 ---
 name: oral-tribometer-setup
+width: 80%
+align: center
 ---
 Schematic of biomimetic oral tribometer setup with various sensors.
 ```

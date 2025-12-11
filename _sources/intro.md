@@ -21,6 +21,8 @@ Food oral processing is inherently multidisciplinary—spanning food physics, se
 ```{figure} ga.png
 ---
 name: graphical-abstract
+width: 80%
+align: center
 ---
 Graphical abstract: From physical instrumental measurements to sensory prediction using deep neural networks.
 ```
@@ -41,6 +43,8 @@ Inspired by this E-book:
 ```{figure} ml.png
 ---
 name: machine-learning
+width: 80%
+align: center
 ---
 Machine learning and geospatial data science By M.P.
 ```

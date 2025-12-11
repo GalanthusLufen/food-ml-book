@@ -16,6 +16,8 @@ Traditional sensory evaluation faces several limitations:
 ```{figure} sensory.png
 ---
 name: sensory-booths
+width: 80%
+align: center
 ---
 Sensory perception experiments require exntesive preparation and are human and labour intensive.
 ```

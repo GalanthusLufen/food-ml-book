@@ -20,6 +20,8 @@ The oral cavity serves as a sophisticated processing environment where multiple 
 ```{figure} fop.png
 ---
 name: fop-framework
+width: 80%
+align: center
 ---
 The Food Oral Processing framework illustrating the interplay between food physics, oral physiology, and sensory perception during eating.
 ```
